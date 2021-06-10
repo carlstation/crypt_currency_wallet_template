@@ -1,0 +1,88 @@
+
+/*---- Dark ----*/
+body.addax-dark .addax-market-status{
+    background: #131722;
+    box-shadow: none;
+}
+body.addax-dark ul.nav-tabs{
+    padding: 13px 0px;
+    border: none;
+    background: #1f2638;
+}
+body.addax-dark ul.nav-tabs li{
+    padding: 0 13px;
+}
+body.addax-dark ul.nav-tabs li a{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 12px;
+    font-size: 13px;
+}
+body.addax-dark ul.nav-tabs li{}
+body.addax-dark ul.nav-tabs li a.active{
+    border-bottom: 3px solid #3898ff;
+}
+body.addax-dark .tab-content table{
+    margin-bottom: 0;
+}
+body.addax-dark .tab-content table thead{
+    background: #131722;
+    color: #fff;
+    font-size: 12px;
+}
+body.addax-dark .tab-content table thead tr{
+    cursor: none;
+    background: #131722 !important;
+}
+body.addax-dark .tab-content table thead tr:hover{
+    background: #131722 !important;
+
+}
+body.addax-dark .tab-content table tbody{}
+body.addax-dark .tab-content table tr:hover{
+    background: #242e3ec4 !important;
+    cursor: pointer;
+}
+body.addax-dark .tab-content table tr:nth-of-type(odd){
+    background: #171f29;
+    color: #fff;
+}
+body.addax-dark .tab-content table tr:nth-of-type(even){
+    background: #171f29;
+    color: #fff;
+}
+body.addax-dark .addax-table-danger{
+    background: #ffedea !important;
+}
+body.addax-dark .addax-table-success{
+    background: #f9fcff !important;
+}
+body.addax-dark .addax-table-hover tr:hover{
+    background: #ffedea !important;
+}
+body.addax-dark table td,
+body.addax-dark table th{
+    border: none !important;
+    font-weight: 600;
+}
+body.addax-dark .no-orders{
+    background: #131722;
+}
+.p-160{
+    padding: 160px 0;
+}
+/*------------ Table dark ends -------*/
+
+#depthchart {
+  width: 100%;
+  height: 265px;
+}
+.addax-depth-chart-small-height{
+    height: 270px !important;
+}
+#chartdiv {
+  width: 100%;
+  height: 350px;
+}

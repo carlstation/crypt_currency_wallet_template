@@ -1,0 +1,51 @@
+
+/*---------------------------------------
+------------------- chart -----------------
+--------------------------------------------*/
+.addax-fulldiv-linechart{
+  padding: 22px 0px 100px 0;
+  text-align: center;
+  position: relative;
+}
+.addax-fulldiv-linechart:after{
+  position: absolute;
+  content: '';
+  width: calc(100% - 10px);
+  background: #fff;
+  top: 0;
+  left: 5px;
+  height: 100%;
+  z-index: -1;
+  box-shadow: 0 3px 15px #f1f1f1;
+}
+body.addax-dark .addax-fulldiv-linechart:after{
+  background: #171f29;
+  box-shadow: none;
+}
+.addax-fulldiv-linechart h4.coinname{
+  margin-top: 30px;
+}
+.addax-fulldiv-linechart .addax-individual-marketcap canvas{
+  margin-left: -5px;
+}
+.addax-fulldiv-linechart .coin-meta-data{
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.addax-fulldiv-linechart .coin-meta-data h5 i{
+  font-weight: 600;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+.addax-fulldiv-linechart .coin-meta-data h3{}
+.addax-fulldiv-linechart .coin-meta-data h6{}
+
+.addax-individual-marketcap iframe body{
+  margin: 0;
+}
+.coin-meta-data h4{
+  font-weight: 500;
+  margin-top: 12px;
+}
