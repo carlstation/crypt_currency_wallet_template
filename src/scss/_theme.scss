@@ -5,7 +5,7 @@ $verde1 : #03414D  ;
 $verde2 : #4BB5AE;
 $verde3 : #A8E3DF;
 
-$verde3 : #D63031;
+$vermelho : #D63031;
 $amarelo: #fdd247;
 
 $preto: #010F12;
@@ -27,7 +27,10 @@ $branco: white;
 
 // cores do tema
 $theme-colors:(
+    "green":$verde,
+    "primary":$verde,
     "amarelo":$amarelo,
+    "dark": $cinza1,
     "cinza":$cinza,
     "cinza-escuro":$cinza1,
     "cinza-claro":$cinza2,
@@ -56,10 +59,10 @@ $theme-colors:(
     color: #fff;
 }
 .addax-dark-segment{
-    background: #131722;
+    background: $cinza1;
 }
 .addax-deepblue-segment{
-    background: #131722;
+    background: $cinza1;
 }
 body.addax-dark .input-group-text{
 
@@ -92,16 +95,16 @@ g[opacity="0.4"]{
 }
 /*--- colors ----*/
 .addax-yellow{
-    color: #f8a43e;
+    color: $amarelo;
 }
 .addax-green{
-    color: #86d6a6;
+    color: $verde;
 }
 .addax-violet{
     color: #5d49c2;
 }
 .addax-red{
-    color: #f7614e  ;
+    color: $vermelho  ;
 }
 .addax-sky-blue{
     color: #31ccf8  ;
@@ -193,22 +196,22 @@ body.addax-dark .addax-bg-head{
     padding: 13px;
 }
 body.addax-dark .addax-boxed-area{
-    background: #131722;
+    background: $cinza1;
     border: none;
     color: #fff;
 }
 
 .addax-up{
-    color: #01aa78 !important;
+    color: $verde !important;
 }
 .addax-down{
-    color: #eb6a61 !important;
+    color: $vermelho !important;
 }
 .padding-left{
     padding-left: 30px;
 }
 .addax-button-green-full{
-    background: #55ad82;
+    background: $verde1;
     color: #fff;
     padding: 9px;
     text-align: center;
@@ -224,7 +227,7 @@ body.addax-dark .addax-boxed-area{
     color: #fff;
 }
 .addax-button-red-full{
-    background: #eb6a61 !important;
+    background: $vermelho !important;
     border: none !important;
     color: #fff;
     padding: 9px;

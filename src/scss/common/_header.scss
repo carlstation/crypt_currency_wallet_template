@@ -23,6 +23,7 @@
 .addax-heading-menu li{
   margin: 0 -18px;
   padding: 0 10px; 
+  border-radius: 8px;
 }
 .addax-heading-menu li{
   display: inline-block;
@@ -52,7 +53,7 @@
 }
 .addax-dark .addax-header{
   box-shadow: none;
-  background: #242e3e;
+  background: $cinza1;
   position: fixed;
   top: 0;
   left: 0;
@@ -82,7 +83,7 @@
 }
 .addax-dark .addax-mega-dropdown-menu-block{
   position: absolute;
-  background: #242e3e;
+  background: $verde;
   padding: 20px;
   width: 550px;
   box-shadow: 0 7px 17px rgba(0,0,0,0.08);
@@ -90,7 +91,7 @@
   opacity: 0;
   display: none;
   transition: all 0.4s ease;
-  border: 1px solid #242e3e;
+  border: 1px solid $verde;
 }
 .addax-dark .addax-mega-dropdown-menu-block.shown{
   opacity: 1;
@@ -105,14 +106,14 @@
   top: -10px;
   width: 20px;
   height: 20px;
-  background: #242e3e;
+  background: $verde;
   transform: rotate(45deg);
-  box-shadow: 0 -2px 20px #242e3e;
+  box-shadow: 0 -2px 20px $verde;
 }
 
 /* ----------- v2.0 --------------- */
 .addax-dark .addax-dropdown{
-  background: #131722;
+  background: $cinza1;
 }
 .addax-dropdown{
   background: #fff;
@@ -147,7 +148,7 @@
 .addax-dark .addax-dropdown li.active a{}
 .addax-dark .addax-gross-market-cap {
   padding: 12px 16px;
-  background: #1f2638;
+  background: $cinza1;
 }
 .addax-dark .addax-gross-market-cap p:first-child{
   margin-bottom: 5px;
@@ -229,22 +230,27 @@
 
 .menu-red{
   border: 1px solid;
-  color: #3898ff;
+  color: $vermelho;
+  // border-radius: 8px;
 }
 .menu-red a{
-  color: #3898ff !important;
+  color: $vermelho !important;
 }
 .menu-red a:hover{
   border-bottom: none !important;
   color: #fff;
 }
 .menu-green{
-  background: #55ad82;
+  background: $verde;
+  // border-radius: 8px;
+
 }
 .menu-green a{
   color: #fff !important;
 }
 .menu-green a:hover{
-  border-bottom: none !important;
-  background: #55AD82 !important;
+  // border-bottom: none !important;
+  background: $verde1 !important;
+  // border-radius: 8px;
+
 }

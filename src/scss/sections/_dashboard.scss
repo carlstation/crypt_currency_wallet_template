@@ -50,7 +50,7 @@ body.addax-dark .addax-dash-search button[type=submit] i{
   margin-bottom: 10px;
 }
 body.addax-dark .addax-big-list li{
-  border: 1px solid #242e3e;
+  border: 1px solid $verde;
 }
 .addax-big-list li a{
   display: block;
@@ -136,7 +136,7 @@ body.addax-dark .addax-withdraw-body .nav-pills a.active{
 }
 
 body.addax-dark .addax-withdraw-body .tab-content{
-  border-left: 1px solid #242e3e;
+  border-left: 1px solid $verde;
   padding: 30px;
 }
 .addax-withdraw-body .tab-content .tab-pane{}
