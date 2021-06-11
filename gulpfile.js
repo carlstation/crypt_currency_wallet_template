@@ -8,6 +8,16 @@ gulp.task('sass', gulp.series(function(){
     //
 }));
 
+// sass comprimi file
+// gulp.task('min-css', () => {
+//   return gulp.src('./src/css/style.css')
+//     .pipe(cleanCSS({debug: true}, (details) => {
+//       console.log(`${details.name}: ${details.stats.originalSize}`);
+//       console.log(`${details.name}: ${details.stats.minifiedSize}`);
+//     }))
+//   .pipe(gulp.dest('./src/css/dist'));
+// });
+
 // sass observa
 gulp.task('watch', gulp.series(function(){
     gulp.watch(['node_modules/bootstrap/scss/*.scss', 'src/scss/*.scss'], gulp.parallel(['sass']));

@@ -14,10 +14,10 @@ body.addax-dark .input-group-text{
     border-radius: 0;
 }
 body.addax-dark .form-control {
-    color: #ffffff;
-    background-color: #080e15;
+    color: $branco;
+    background-color: $cinza1;
     background-clip: padding-box;
-    border: 1px solid #292f3e;
+    border: 1px solid $cinza2;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -26,11 +26,17 @@ body.addax-dark .form-control {
     background: $cinza;
 }
 .addax-dark .icon-big{
-    color: #fff;
+    color: $branco;
 }
 .addax-dark .input-group select{
-    background: #131a33;
-    border: 1px solid #2f3a56;
+    background: $cinza1;
+    border: 1px solid $cinza2;
+}
+.addax-dark h3.dropdown-item-title {
+ color: $preto;   
+}
+.addax-dark p.text-sm {
+ color: $cinza;   
 }
 .addax-dark h1,
 .addax-dark h2,
@@ -39,7 +45,7 @@ body.addax-dark .form-control {
 .addax-dark h5,
 .addax-dark h6,
 .addax-dark p{
-    color: #fff;
+    color: $branco;
 }
 .addax-dark h1{
     font-weight: 600;
@@ -52,16 +58,18 @@ body.addax-dark .form-control {
 }
 
 .bg-white{
-    background: #fff;
+    background: $branco;
 }
 g[opacity="0.3"],
 g[opacity="0.4"]{
     display: none;
 }
 .addax-logo img{
+    display: flex;
     height: auto;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 /*--- colors ----*/
 .addax-yellow{
@@ -99,7 +107,7 @@ g[opacity="0.4"]{
 .addax-btn{
     color: #555;
     padding: 15px 20px;
-    background: #fff;
+    background: $branco;
     text-decoration: none;
 -webkit-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
    -moz-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
@@ -140,15 +148,15 @@ body.addax-dark .addax-btn:hover{
 } 
 .addax-btn-green{
     background: #0e75ee;
-    color: #fff;
+    color: $branco;
 } 
 .addax-btn-red{
     background: #0e75ee;
-    color: #fff;
+    color: $branco;
 }
 .addax-btn-green:hover,
 .addax-btn-red:hover{
-    color: #fff;
+    color: $branco;
 }
 .fright{
     float: right;
@@ -159,7 +167,7 @@ body.addax-dark .addax-btn:hover{
 }
 .addax-boxed-area{
     border: 1px solid #f1f1f1;
-    background: #fff;
+    background: $branco;
 }
 body.addax-dark .addax-bg-head{
     background: #1f2638;
@@ -168,7 +176,7 @@ body.addax-dark .addax-bg-head{
 body.addax-dark .addax-boxed-area{
     background: $cinza1;
     border: none;
-    color: #fff;
+    color: $branco;
 }
 
 .addax-up{
@@ -182,7 +190,7 @@ body.addax-dark .addax-boxed-area{
 }
 .addax-button-green-full{
     background: $verde1;
-    color: #fff;
+    color: $branco;
     padding: 9px;
     text-align: center;
     text-decoration: none;
@@ -194,12 +202,12 @@ body.addax-dark .addax-boxed-area{
 .addax-button-green-full:hover{
     background: #34a560;
     text-decoration: none;
-    color: #fff;
+    color: $branco;
 }
 .addax-button-red-full{
     background: $vermelho !important;
     border: none !important;
-    color: #fff;
+    color: $branco;
     padding: 9px;
     text-align: center;
     text-decoration: none;
@@ -210,12 +218,12 @@ body.addax-dark .addax-boxed-area{
 }
 .addax-button-red-full:hover{
     text-decoration: none;
-    color: #fff;
+    color: $branco;
     background: #ca3a28;
 }
 .addax-header{
     box-shadow: 0 2px 20px #f1f1f1;
-    background: #fff;
+    background: $branco;
     position: fixed;
     top: 0;
     left: 0;
@@ -246,7 +254,7 @@ body.addax-dark .addax-boxed-area{
 }
 .addax-mega-dropdown-menu-block{
     position: absolute;
-    background: #fff;
+    background: $branco;
     padding: 20px;
     width: 550px;
     box-shadow: 0 7px 17px rgba(0,0,0,0.08);
@@ -268,7 +276,7 @@ body.addax-dark .addax-boxed-area{
     top: -10px;
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: $branco;
     transform: rotate(45deg);
     box-shadow: 0 -2px 20px #ddd;
 }
