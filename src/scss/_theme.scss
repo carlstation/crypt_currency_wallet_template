@@ -13,13 +13,17 @@ body.addax-dark .input-group-text{
     // border: 1px solid #292f3e;
     border-radius: 0;
 }
-body.addax-dark .form-control {
+body.addax-dark .form-control  {
     color: $branco;
     background-color: $cinza1;
     background-clip: padding-box;
     border: 1px solid $cinza2;
-    border-radius: 0.25rem;
+    border-radius: 0.35rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+body.addax-dark .card{
+    border-radius: 0.35rem;
 }
 
 .addax-dark{

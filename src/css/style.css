@@ -23,8 +23,11 @@ body.addax-dark .form-control {
   background-color: #212936;
   background-clip: padding-box;
   border: 1px solid #56657F;
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+
+body.addax-dark .card {
+  border-radius: 0.35rem; }
 
 .addax-dark {
   background: #313C4E; }
@@ -25734,15 +25737,15 @@ a.text-muted:hover {
   top: 0;
   width: 100%;
   z-index: 100000;
-  background-color: #f2f4f8; }
+  background-color: #010F12; }
 
 .addax-load {
   -webkit-animation: 2000ms linear 0s normal none infinite running addax-load;
   animation: 2000ms linear 0s normal none infinite running addax-load;
   background-color: transparent;
-  border-top-color: #ffffff;
-  border-left-color: #ffffff;
-  border-right-color: #ffffff;
+  border-top-color: #A8E3DF;
+  border-left-color: #A8E3DF;
+  border-right-color: #A8E3DF;
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;

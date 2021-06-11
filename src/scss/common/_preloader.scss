@@ -10,15 +10,15 @@
     top: 0;
     width: 100%;
     z-index: 100000;
-    background-color: #f2f4f8; }
+    background-color: $preto; }
   
   .addax-load {
     -webkit-animation: 2000ms linear 0s normal none infinite running addax-load;
     animation: 2000ms linear 0s normal none infinite running addax-load;
     background-color: transparent;
-    border-top-color: #ffffff;
-    border-left-color: #ffffff;
-    border-right-color: #ffffff;
+    border-top-color: $verde3;
+    border-left-color: $verde3;
+    border-right-color: $verde3;
     border-radius: 50%;
     border-style: solid;
     border-width: 2px;
