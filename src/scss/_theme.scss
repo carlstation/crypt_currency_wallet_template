@@ -1,43 +1,27 @@
-// escala de cores 
-$verde : #128884;
-
-$verde1 : #03414D  ;
-$verde2 : #4BB5AE;
-$verde3 : #A8E3DF;
-
-$vermelho : #D63031;
-$amarelo: #fdd247;
-
-$preto: #010F12;
-$cinza: #313C4E;
-
-$cinza1: #212936;
-$cinza2: #56657F;
-$cinza3: #D9D9D9;
-
-$branco: white;
-
-@mixin maingradient(){
-    background: $verde1;
-    background: -moz-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
-    background: -webkit-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
-    background: linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$verde1,endColorstr=$verde,GradientType=1);
-}
-
-// cores do tema
-$theme-colors:(
-    "green":$verde,
-    "primary":$verde,
-    "amarelo":$amarelo,
-    "dark": $cinza1,
-    "cinza":$cinza,
-    "cinza-escuro":$cinza1,
-    "cinza-claro":$cinza2,
-    "cinza-smoke":$cinza3,
-);
 
 /*------------- dark theme -------------*/
+body.addax-dark{
+    font-family: $addax_font;
+    font-weight: 300;
+}
+body.addax-dark .input-group-text{
+
+    color: $cinza3;
+    text-align: center;
+    white-space: nowrap;
+    // background-color: #080e15;
+    // border: 1px solid #292f3e;
+    border-radius: 0;
+}
+body.addax-dark .form-control {
+    color: #ffffff;
+    background-color: #080e15;
+    background-clip: padding-box;
+    border: 1px solid #292f3e;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .addax-dark{
     background: $cinza;
 }
@@ -54,9 +38,11 @@ $theme-colors:(
 .addax-dark h4,
 .addax-dark h5,
 .addax-dark h6,
-.addax-dark p,
-.addax-dark a{
+.addax-dark p{
     color: #fff;
+}
+.addax-dark h1{
+    font-weight: 600;
 }
 .addax-dark-segment{
     background: $cinza1;
@@ -64,23 +50,7 @@ $theme-colors:(
 .addax-deepblue-segment{
     background: $cinza1;
 }
-body.addax-dark .input-group-text{
 
-    color: #e9ecef;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #080e15;
-    border: 1px solid #292f3e;
-    border-radius: 0;
-}
-body.addax-dark .form-control {
-    color: #ffffff;
-    background-color: #080e15;
-    background-clip: padding-box;
-    border: 1px solid #292f3e;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 .bg-white{
     background: #fff;
 }

@@ -8,10 +8,12 @@
 // @import url(extra/owl.carousel.min.css);
 // @import url(extra/magnific-popup.css);
 // @import url(extra/font-awesome.min.css);
-@import url(extra/fontawesome-free/css/all.min.css);
 // @import url(extra/pe-icon-7-stroke.css);
 // @import url(extra/themify-icons.css);
+@import url(extra/fontawesome-free/css/all.min.css);
 @import "fonts";
+
+@import "addax_variables";
 @import "theme";
 
 @import "build/scss/AdminLTE.scss";

@@ -244,6 +244,14 @@ html.maximized-card {
   margin: 0;
 }
 
+.card-header > h5 {
+  float: left;
+  font-size: $card-header-font-size;
+  font-weight: $card-title-font-weight;
+  margin: 0;
+}
+
+
 .card-text {
   clear: both;
 }

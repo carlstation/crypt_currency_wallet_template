@@ -31,11 +31,11 @@
   position: relative;
 
   [class*='sidebar-dark'] & {
-    border-bottom: 1px solid lighten($dark, 12%);
+    border-bottom: 1px solid lighten($cinza, 12%);
   }
 
   [class*='sidebar-light'] & {
-    border-bottom: 1px solid $gray-300;
+    border-bottom: 1px solid $cinza2;
   }
 
   &,

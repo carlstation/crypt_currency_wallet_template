@@ -93,29 +93,30 @@ $main-header-light-placeholder-color: hsla(0, 0%, 0%, 0.6) !default;
 $main-footer-padding: 1rem !default;
 $main-footer-padding-sm: $main-footer-padding * .812 !default;
 $main-footer-border-top-width: 1px !default;
-$main-footer-border-top-color: $gray-300 !default;
+$main-footer-border-top-color: $cinza2 !default;
 $main-footer-border-top: $main-footer-border-top-width solid $main-footer-border-top-color !default;
 $main-footer-height-inner: (($font-size-root * $line-height-base) + ($main-footer-padding * 2)) !default;
 $main-footer-height: calc(#{$main-footer-height-inner} + #{$main-footer-border-top-width}) !default;
 $main-footer-height-sm-inner: (($font-size-sm * $line-height-base) + ($main-footer-padding-sm * 2)) !default;
 $main-footer-height-sm: calc(#{$main-footer-height-sm-inner} + #{$main-footer-border-top-width}) !default;
-$main-footer-bg: $white !default;
+$main-footer-bg: $cinza1 !default;
 
 // SIDEBAR SKINS
 // --------------------------------------------------------
 
 // Dark sidebar
 $sidebar-dark-bg: $cinza1 !default; 
-$sidebar-dark-hover-bg: hsla(100, 100%, 100%, 0.1) !default;
-$sidebar-dark-color: #C2C7D0 !default;
+$sidebar-dark-hover-bg: rgba($cinza, 0.2) !default;
+$sidebar-dark-color: $cinza3 !default;
 $sidebar-dark-hover-color: $white !default;
 $sidebar-dark-active-color: $white !default;
 $sidebar-dark-submenu-bg: transparent !default;
-$sidebar-dark-submenu-color: #C2C7D0 !default;
+$sidebar-dark-submenu-color: $cinza !default;
 $sidebar-dark-submenu-hover-color: $white !default;
 $sidebar-dark-submenu-hover-bg: $sidebar-dark-hover-bg !default;
 $sidebar-dark-submenu-active-color: $sidebar-dark-bg !default;
-$sidebar-dark-submenu-active-bg: hsla(100, 100%, 100%, 0.9) !default;
+// $sidebar-dark-submenu-active-bg: hsla(100, 100%, 100%, 0.9) !default;
+$sidebar-dark-submenu-active-bg: $cinza;
 $sidebar-dark-header-color: $white !default;
 
 // Light sidebar
@@ -147,9 +148,10 @@ $control-sidebar-width: $sidebar-width !default;
 $card-border-color: $gray-100 !default;
 $card-dark-border-color: lighten($gray-900, 10%) !default;
 $card-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2) !default;
-$card-title-font-size: 1.1rem !default;
+$card-header-font-size: 1.5rem !default;
+$card-title-font-size: 1.2rem !default;
 $card-title-font-size-sm: 1rem !default;
-$card-title-font-weight: $font-weight-normal !default;
+$card-title-font-weight: 600 !default;
 $card-nav-link-padding-sm-y: .4rem !default;
 $card-nav-link-padding-sm-x: .8rem !default;
 $card-img-size: $img-size-sm !default;

@@ -1,0 +1,42 @@
+// escala de cores 
+$verde : #128884;
+
+$verde1 : #03414D  ;
+$verde2 : #4BB5AE;
+$verde3 : #A8E3DF;
+
+$vermelho : #D63031;
+$amarelo: #fdd247;
+
+$preto: #010F12;
+$cinza: #313C4E;
+
+$cinza1: #212936;
+$cinza2: #56657F;
+$cinza3: #D9D9D9;
+
+$branco: white;
+$dark:          $cinza !default;
+
+@mixin maingradient(){
+    background: $verde1;
+    background: -moz-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
+    background: -webkit-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
+    background: linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$verde1,endColorstr=$verde,GradientType=1);
+}
+
+// cores do tema
+$theme-colors:(
+    "green":$verde,
+    "primary":$verde,
+    "amarelo":$amarelo,
+    "dark": $cinza1,
+    "cinza":$cinza,
+    "cinza-escuro":$cinza1,
+    "cinza-claro":$cinza2,
+    "cinza-smoke":$cinza3,
+);
+
+
+$addax_font: 'Source Sans Pro', sans-serif;
