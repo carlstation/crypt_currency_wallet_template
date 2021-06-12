@@ -1,5 +1,11 @@
 
 /*------------- dark theme -------------*/
+.dvs-line {
+    margin: 15px 0;
+    width: 100%;
+    height: 1px;
+    background-color: $cinza; }
+
 body.addax-dark{
     font-family: $addax_font;
     font-weight: 300;
@@ -39,6 +45,11 @@ body.addax-dark .card{
 .addax-dark h3.dropdown-item-title {
  color: $preto;   
 }
+
+.addax-dark p .nav-sidebar {
+color: $cinza;   
+}
+
 .addax-dark p.text-sm {
  color: $cinza;   
 }
@@ -68,7 +79,7 @@ g[opacity="0.3"],
 g[opacity="0.4"]{
     display: none;
 }
-.addax-logo img{
+.addax-logo img, .addax-icon img{
     display: flex;
     height: auto;
     margin-top: 20px;

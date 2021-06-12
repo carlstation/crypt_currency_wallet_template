@@ -36,5 +36,22 @@
         }
     });
 
+    $(document).on('click', '.nav-link', function(cb){
+        
+        if( document.body.className.match('sidebar-collapse') ) { 
+            
+            console.log('yes')
+            // deve mostrar somente o icone
+            $('.addax-logo').addClass('d-none')
+            $('.addax-icon').removeClass('d-none')
+        }
+        else{
+            // deve mostrar a logo inteira
+            console.log('no') 
+            $('.addax-logo').removeClass('d-none')
+            $('.addax-icon').addClass('d-none')
+          }
+    });
+
 
 })(jQuery);

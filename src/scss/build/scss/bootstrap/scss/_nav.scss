@@ -80,6 +80,7 @@
 
   .nav-link.active,
   .show > .nav-link {
+    // @include mainshadow();
     color: $nav-pills-link-active-color;
     background-color: $nav-pills-link-active-bg;
   }

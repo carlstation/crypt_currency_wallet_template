@@ -31,7 +31,7 @@
   position: relative;
 
   [class*='sidebar-dark'] & {
-    border-bottom: 1px solid lighten($cinza, 12%);
+    border-bottom: 1px solid lighten($cinza2, 12%);
   }
 
   [class*='sidebar-light'] & {
@@ -375,17 +375,22 @@
     // Hover and active states
     &.menu-open > .nav-link,
     &:hover > .nav-link,
-    & > .nav-link:focus  {
-      background-color: $sidebar-dark-hover-bg;
-      color: $sidebar-dark-hover-color;
+    & > .nav-link:focus, & > .nav-link.active p {
+      
+      // @include mainshadow();
+      // background-color: $sidebar-dark-hover-bg;
+      color: $verde
     }
 
     > .nav-link.active {
-      color: $sidebar-dark-hover-color;
+      @include mainshadow();
 
-      @if $enable-shadows {
-        box-shadow: map-get($elevations, 1);
-      }
+      // color: $verde;
+      // color: $sidebar-dark-hover-color;
+
+      // @if $enable-shadows {
+      //   box-shadow: map-get($elevations, 1);
+      // }
     }
 
     // First Level Submenu
@@ -458,19 +463,19 @@
 }
 
 // Sidebar variants
-@each $name, $color in $theme-colors {
-  .sidebar-dark-#{$name},
-  .sidebar-light-#{$name} {
-    @include sidebar-color($color)
-  }
-}
+// @each $name, $color in $theme-colors {
+//   .sidebar-dark-#{$name},
+//   .sidebar-light-#{$name} {
+//     @include sidebar-color($color)
+//   }
+// }
 
-@each $name, $color in $colors {
-  .sidebar-dark-#{$name},
-  .sidebar-light-#{$name} {
-    @include sidebar-color($color)
-  }
-}
+// @each $name, $color in $colors {
+//   .sidebar-dark-#{$name},
+//   .sidebar-light-#{$name} {
+//     @include sidebar-color($color)
+//   }
+// }
 
 .sidebar-mini .main-sidebar:not(.sidebar-no-expand),
 .sidebar-mini-md .main-sidebar:not(.sidebar-no-expand),
