@@ -375,10 +375,11 @@
     // Hover and active states
     &.menu-open > .nav-link,
     &:hover > .nav-link,
-    & > .nav-link:focus, & > .nav-link.active p {
+    & > .nav-link:focus, & > .nav-link.active p, & .nav-link.active > svg.icon path{
       
       // @include mainshadow();
-      // background-color: $sidebar-dark-hover-bg;
+      background-color: $sidebar-dark-hover-bg;
+      fill: $verde;
       color: $verde
     }
 
@@ -388,9 +389,9 @@
       // color: $verde;
       // color: $sidebar-dark-hover-color;
 
-      // @if $enable-shadows {
-      //   box-shadow: map-get($elevations, 1);
-      // }
+      @if $enable-shadows {
+        box-shadow: map-get($elevations, 1);
+      }
     }
 
     // First Level Submenu
@@ -407,8 +408,9 @@
 
   // All links within the sidebar menu
   .sidebar {
-    a {
-      color: $sidebar-dark-color;
+    a, & .nav-link p {
+      color: $cinza2;
+      fill: $cinza2;
 
       &:hover,
       &:focus {

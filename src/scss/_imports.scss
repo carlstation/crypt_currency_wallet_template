@@ -14,18 +14,19 @@
 @import "fonts";
 
 @import "addax_variables";
+@import "icons";
+@import "common/skin";
 @import "theme";
 
 @import "build/scss/AdminLTE.scss";
 // web fonts
 @import "common/preloader";
+@import "ui";
 
-// // common 
 // @import "common/common";
 // @import "common/header";
 // @import "common/menu";
 // @import "common/market";
-// @import "common/skin";
 // @import "common/forms";
 // @import "sections/charts";
 // @import "common/slider";
@@ -37,6 +38,4 @@
 // @import "common/mediaquery";
 // @import "extend";
 
-// @import "icons";
-// @import "common/ui";
 
