@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
-  <title>Addax | Swap Tokens</title>
+  <title>Addax | Stop Loss</title>
 
 	<link href="src/css/style.css" rel="stylesheet">
 
@@ -126,7 +126,7 @@
               </li>
               
               <li class="nav-item">
-                <a href="stop_losses.html" class="nav-link">
+                <a href="stop_losses.html" class="nav-link active">
                   <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 21H4C3.44772 21 3 20.5523 3 20V3H5V19H21V21ZM19.627 16L15.457 11.918L13.229 14.1C12.8467 14.4715 12.2383 14.4715 11.856 14.1L7 9.344L8.373 8L12.543 12.082L14.77 9.9C15.1523 9.52848 15.7607 9.52848 16.143 9.9L21 14.656L19.627 16Z" fill="#56657F"/>
                     </svg>
@@ -151,7 +151,7 @@
               </li>
               
               <li class="nav-item">
-                <a href="swap_token.html" class="nav-link active">
+                <a href="swap_token.html" class="nav-link">
                   <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 8.56246V7.93746C2 7.41968 2.41973 6.99996 2.9375 6.99996H17V5.12496C17 4.29031 18.0117 3.87332 18.6004 4.46203L21.7254 7.58703C22.0915 7.95316 22.0915 8.54676 21.7254 8.91285L18.6004 12.0378C18.0139 12.6243 17 12.2131 17 11.375V9.49996H2.9375C2.41973 9.49996 2 9.08023 2 8.56246ZM21.0625 14.5H7V12.625C7 11.7924 5.98977 11.3718 5.39957 11.962L2.27457 15.087C1.90848 15.4532 1.90848 16.0468 2.27457 16.4128L5.39957 19.5378C5.9866 20.1248 7 19.7123 7 18.875V17H21.0625C21.5803 17 22 16.5802 22 16.0625V15.4375C22 14.9197 21.5803 14.5 21.0625 14.5Z" fill="#56657F"/>
                     </svg>
@@ -215,12 +215,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6">
-            <h1 class="m-0 text-white">Swap Tokens</h1>
+            <h1 class="m-0 text-white">Stop Losses</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Swap Tokens</li>
+              <li class="breadcrumb-item active">Stop Loss</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -242,9 +242,7 @@
               <form action="">
 
                 <div class="row mb-5 text-center">
-                  <div class="col-sm-5"><button href="#" class="btn btn-primary btn-connect addax-btn"><i class="fab fa-bitcoin mr-2"></i> BND</button></div>
-                  <div class="col-sm-2"><button href="#" class="btn btn-primary btn-circle mt-4"><i class="fas fa-exchange-alt"></i></button></div>
-                  <div class="col-sm-5"><button href="#" class="btn btn-primary btn-connect addax-btn">Select Your Token</button></div>
+                  <div class="col-sm-12"><button href="#" class="btn btn-primary btn-connect addax-btn">Select Your Token</button></div>
                 </div>
 
                 <div class="row">
@@ -254,7 +252,7 @@
     
                       <div class="input-group input-text-select mb-3">
                         <div class="input-group-prepend">
-                          <input id="amount_in" name="amount_in" placeholder="0" type="text" class="form-control addax-input-lg">
+                          <input id="amount_in" name="amount_in" placeholder="0" type="text" class="form-control addax-input-lg" required>
                         </div>
                         <select class="custom-select" name="inputGroupSelect01">
                           <option value="1">BNB</option>
@@ -267,32 +265,17 @@
                 </div>
                   
                 <div class="row">
-                  <div class="col-lg-8 col-sm-12">
+                  <div class="col-lg-12">
+                    <label for="trigger_amount">Trigger Amount</label>
+                    <div class="input-group mb-3">
 
-                    <div class="form-group">
-  
-                      <label for="amount_out">Amount Out</label>
-                      <div class="input-group mb-3">
-                        <input type="text" id="amount_out" name="amount_out" placeholder="0" class="form-control addax-input-lg">
-                        
-                      </div>
-    
-                    </div>
-                  </div>
-                    
-                    <div class="col-lg-4 col-sm-12">
-                      <div class="form-group">
-                        <label for="quantity">Slippage</label> <span>* %</span>
-    
-                        <div class="quantity buttons_added input-group mb-3">
-                          <input type="button" value="-" class="minus form-control addax-input-lg col-sm-3">
-                          <input type="number" step="1" min="1" max="" id="quantity" name="quantity" value="1" title="Qty" class="input-text qty text form-control addax-input-lg col-sm-6" size="4" pattern="" inputmode="">
-                          <input type="button" value="+" class="plus form-control addax-input-lg col-sm-3">
-                        </div>
+                      <input type="text" id="trigger_amount" name="trigger_amount" placeholder="0" class="form-control addax-input-lg" required>
+                      <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-exchange-alt mr-4"></i> BUSD</span>
                       </div>
                     </div>
-
                   </div>
+                </div>
                   
                   <div class="row">
                     <div class="col-lg-12">
@@ -301,40 +284,20 @@
                         <!-- <textarea class="form-control" rows="3" placeholder="Enter ... "> -->
                         <!-- </textarea> -->
                         <div class="summary">
-                          <p>Minimum Received : 0</p>
-                          <p>Price Impact : 0,00%</p>
-                          <p>Price : 0 / BNB</p>
-                          <p>Price : Infinity BNB</p>
+                          <p>Yur current Balance is 0, Solo</p>
+                          <p>you must hold 100 or 10 to use this feature</p>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="text-center mt-5 mb-5">
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                      <label class="btn btn-secondary swap-btn active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Pancake v1
-                      </label>
-                      <label class="btn btn-secondary swap-btn ">
-                        <input type="radio" name="options" id="option2" autocomplete="off"> Pancake v2
-                      </label>
-                      <label class="btn btn-secondary swap-btn ">
-                        <input type="radio" name="options" id="option3" autocomplete="off"> ApleSwap
-                      </label>
-                    </div>
-                  </div>
+                 
 
                   <button id="submit" href="#" class="btn btn-primary btn-connect addax-btn" disabled >Connect the Wallet</button>
                   
               </form>
             </div>
-            <div class="dvs-line"></div>
-
-            <div class="text-center">
-              <div class="addax-card-footer mb-4 mt-4">
-                Powered by Addax
-              </div>
-            </div>
+            
           </div>
 
         </div>

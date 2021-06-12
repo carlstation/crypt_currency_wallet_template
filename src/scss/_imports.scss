@@ -15,26 +15,26 @@
 
 @import "addax_variables";
 @import "icons";
-@import "common/skin";
 @import "theme";
+@import "common/preloader";
 
 @import "build/scss/AdminLTE.scss";
 // web fonts
-@import "common/preloader";
-@import "ui";
 
 // @import "common/common";
 // @import "common/header";
 // @import "common/menu";
 // @import "common/market";
+@import "common/skin";
 // @import "common/forms";
 // @import "sections/charts";
 // @import "common/slider";
 // @import "sections/dashboard";
-// @import "sections/deposit_form";
+@import "sections/deposit_form";
 // @import "sections/candlecheck";
 // @import "common/login";
 
+@import "ui";
 // @import "common/mediaquery";
 // @import "extend";
 

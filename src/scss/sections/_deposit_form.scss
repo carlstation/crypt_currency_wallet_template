@@ -1,5 +1,9 @@
 
 /*---- deposit form ----*/
+.btn-connect{
+  width: 100%;
+  height: 16vh;
+}
 .deposit-form{}
 .addax-radio-boxed{
     position: relative;
@@ -86,16 +90,20 @@ body.addax-dark .addax-radio-boxed label{
   -webkit-transition: background 0.25s linear;
 }
 
+label{
+  color: $cinza3;
+}
+
 .addax-radio-boxed input[type=radio]:checked ~ .check {
-  border: 5px solid #49c279;
+  border: 5px solid $verde2;
 }
 
 .addax-radio-boxed input[type=radio]:checked ~ .check::before{
-  background: #49c279;
+  background: $verde2;
 }
 
 .addax-radio-boxed input[type=radio]:checked ~ label{
-  color: #49c279;
+  color: $verde2;
 }
 
 select.addax-image-select{
@@ -130,4 +138,76 @@ select.addax-image-select option{}
 row.md-gutter [class*='col-'] {
     padding-right: 10px;
     padding-left: 10px;
+}
+
+
+/* -- quantity box -- */
+
+.quantity {
+  display: inline-block; }
+ 
+ .quantity .input-text.qty {
+  // width: 35px;
+  // height: 39px;
+  padding: 0 5px;
+  text-align: center;
+  
+  // background-color: transparent;
+  // border: 1px solid #efefef;
+ }
+ 
+ .quantity.buttons_added {
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top; }
+ 
+ .quantity.buttons_added input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  box-shadow: none;
+ }
+ 
+ .quantity.buttons_added .minus,
+ .quantity.buttons_added .plus {
+  padding: 7px 10px 8px;
+  // width: 41px;
+  // height: 41px;
+  // background-color: transparent;
+  // border: 1px solid $cinza;
+  cursor:pointer;}
+ 
+ .quantity.buttons_added .minus {
+  border-right: 0; }
+ 
+ .quantity.buttons_added .plus {
+  border-left: 0; }
+ 
+ .quantity.buttons_added .minus:hover,
+ .quantity.buttons_added .plus:hover {
+  background: $cinza1; }
+ 
+ .quantity input::-webkit-outer-spin-button,
+ .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0; }
+  
+  .quantity.buttons_added .minus:focus,
+ .quantity.buttons_added .plus:focus {
+  outline: none; }
+ 
+.summary{
+  min-height: fit-content;
+  background-color: $cinza1;
+  border: 1px solid $cinza2;
+  border-radius: 0.35rem;
+  padding: 1rem 0.75rem 0.35rem 0.75rem;
+}
+.summary p{
+  color: $cinza2!important;
+  margin-bottom: 0.45rem !important;
+  line-height: 1.2rem;
+  font-size: 1rem;
 }

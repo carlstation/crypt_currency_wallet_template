@@ -7,6 +7,115 @@
     height: 1px;
     background-color: $cinza; }
 
+    .addax-table{
+        & th{
+            color: $cinza2;
+        }
+        & td{
+            color: $cinza3;
+        }
+    }
+    .table th, .table td{
+        border-top:0!important;
+    }
+    .table thead th{
+        border-bottom: 1px solid $cinza !important;
+    }
+.identity{
+    display: flex;
+    flex-direction: column;
+    & p{
+        margin-bottom: 0.35rem;
+    }
+}
+.mb{
+border-bottom: 1px solid $cinza !important;
+}
+.text-gray{
+    color: $cinza2;
+}
+.summary-price p{
+    margin-bottom: 0;
+}
+.summary-detail span{
+    font-size: 0.9rem;
+    margin-top:0.5rem;
+    margin-left: 1rem;
+}
+.summary-card{
+    min-height: 340px;
+}
+.summary-panel img{
+width: 3.8rem;
+height: auto;
+}
+.identity .avatar{
+    width: 80px;
+    height: 80px;
+}
+.input-group-text{
+    background-color: transparent!important;
+    border: 1px solid $cinza2!important;
+    border-radius: 0.35rem!important;
+}
+.addax-card-footer{
+    color:$cinza2;
+    font-size: 1rem;
+}
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 1.4rem !important;
+    line-height: 1.5 !important;
+    border-radius: 50%!important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+.btn-circle-sm {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 0.8rem !important;
+    // line-height: 1.5 !important;
+    border-radius: 50%!important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .btn-primary-light{
+    background-color: rgba($verde2, 0.3)!important
+  }
+  
+  .btn-primary-light i{
+      color: $verde3!important;
+  }
+
+  .btn-primary.disabled, .btn-primary:disabled{
+      background-color: $cinza2 !important;
+      border: 1px solid $cinza1 !important;
+  }
+
+  .swap-btn.active{
+      background: $verde !important;
+      border: 1px solid $verde1 !important;
+      color: $branco !important;
+    }
+    .swap-btn.active:hover{
+        background: $verde1 !important;
+        border: 1px solid $verde !important;
+    }
+  .swap-btn:hover{
+      background: $cinza2 !important;
+      border: 1px solid $cinza !important;
+      color: $cinza3 !important;
+  }
+  .swap-btn{
+    background: $cinza !important;
+    border: 1px solid $cinza1 !important;
+    color: $branco !important;
+}
 body.addax-dark{
     font-family: $addax_font;
     font-weight: 300;
@@ -25,7 +134,7 @@ body.addax-dark .form-control  {
     background-color: $cinza1;
     background-clip: padding-box;
     border: 1px solid $cinza2;
-    border-radius: 0.35rem;
+    border-radius: 0.35rem!important;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
