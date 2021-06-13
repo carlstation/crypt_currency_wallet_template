@@ -339,7 +339,8 @@
   display: flex;
   flex-direction: column; }
   .identity p {
-    margin-bottom: 0.35rem; }
+    margin-bottom: 0.05rem;
+    margin-top: 0.55rem; }
 
 .mb {
   border-bottom: 1px solid #313C4E !important; }
@@ -349,6 +350,9 @@
 
 .summary-price p {
   margin-bottom: 0; }
+
+.summary-item {
+  margin-left: 1.25rem; }
 
 .summary-detail span {
   font-size: 0.9rem;
@@ -387,8 +391,8 @@
   margin-bottom: auto; }
 
 .btn-circle-sm {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   padding: 6px 0;
   font-size: 0.8rem !important;
@@ -399,16 +403,38 @@
 .btn-primary-light {
   background-color: rgba(75, 181, 174, 0.3) !important; }
 
+.btn-addax {
+  background-color: #313C4E;
+  border: 1px solid #212936; }
+  .btn-addax .btn-addax:focus {
+    background-color: #128884; }
+  .btn-addax :hover {
+    background-color: #212936; }
+
 .btn-primary-light i {
-  color: #A8E3DF !important; }
+  color: #A8E3DF !important;
+  margin-left: -0.15rem; }
 
 .btn-primary.disabled, .btn-primary:disabled {
   background-color: #56657F !important;
   border: 1px solid #212936 !important; }
 
+.ml-6 {
+  margin-left: 5rem; }
+
+.bt-green {
+  display: contents;
+  color: #128884 !important;
+  font-weight: 500; }
+
+.bt-danger {
+  display: contents;
+  color: #D63031 !important;
+  font-weight: 400; }
+
 .swap-btn.active {
   background: #128884 !important;
-  border: 1px solid #03414D !important;
+  border: 1px solid #4BB5AE !important;
   color: white !important; }
 
 .swap-btn.active:hover {
@@ -416,13 +442,21 @@
   border: 1px solid #128884 !important; }
 
 .swap-btn:hover {
-  background: #56657F !important;
-  border: 1px solid #313C4E !important;
-  color: #D9D9D9 !important; }
-
-.swap-btn {
   background: #313C4E !important;
   border: 1px solid #212936 !important;
+  color: #D9D9D9 !important; }
+
+.swap-btn:focus {
+  background: #128884 !important;
+  border: 1px solid #4BB5AE !important;
+  color: #D9D9D9 !important; }
+
+.text-verde, .text-verde span, .text-verde a, .text-verde i, .text-verde span a i {
+  color: #128884 !important; }
+
+.swap-btn {
+  background: #212936 !important;
+  border: 1px solid #313C4E !important;
   color: white !important; }
 
 body.addax-dark {
@@ -25912,6 +25946,46 @@ a.text-muted:hover {
 [class*="accent-"] a.btn-cinza-smoke {
   color: #1F2D3D; }
 
+.addax-market-status {
+  background: #fff;
+  box-shadow: 0 2px 10px #f1f1f1; }
+
+ul.nav-tabs {
+  padding: 13px 0px;
+  border: none;
+  background: #ecf4fe; }
+
+ul.nav-tabs li {
+  padding: 0 13px; }
+
+ul.nav-tabs li a {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 12px;
+  font-size: 13px; }
+
+ul.nav-tabs li a.active {
+  border-bottom: 3px solid #f7614e; }
+
+.tab-content {
+  max-height: 738px;
+  overflow-y: scroll; }
+
+.addax-table-danger {
+  background: #ffedea !important; }
+
+.addax-table-success {
+  background: #f9fcff !important; }
+
+.addax-table-hover tr:hover {
+  background: #ffedea !important; }
+
+table td,
+table th {
+  border: none !important; }
+
 /*---- Dark ----*/
 .card {
   border-radius: 0.8rem; }
@@ -25952,6 +26026,52 @@ a.text-muted:hover {
   display: contents;
   color: #128884 !important;
   font-weight: 600; }
+
+/*---------------------------------------
+------------------- chart -----------------
+--------------------------------------------*/
+.addax-fulldiv-linechart {
+  text-align: center;
+  position: relative; }
+
+.addax-fulldiv-linechart:after {
+  position: absolute;
+  content: '';
+  width: calc(100% - 10px);
+  background: #fff;
+  top: 0;
+  left: 5px;
+  height: 100%;
+  z-index: -1;
+  box-shadow: 0 3px 15px #f1f1f1; }
+
+body.addax-dark .addax-fulldiv-linechart:after {
+  background: #171f29;
+  box-shadow: none; }
+
+.addax-fulldiv-linechart h4.coinname {
+  margin-top: 30px; }
+
+.addax-fulldiv-linechart .addax-individual-marketcap canvas {
+  margin-left: -5px; }
+
+.addax-fulldiv-linechart .coin-meta-data {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.addax-fulldiv-linechart .coin-meta-data h5 i {
+  font-weight: 600;
+  vertical-align: middle;
+  margin-top: -5px; }
+
+.addax-individual-marketcap iframe body {
+  margin: 0; }
+
+.coin-meta-data h4 {
+  font-weight: 500;
+  margin-top: 12px; }
 
 /*---- deposit form ----*/
 .btn-connect {
@@ -26136,6 +26256,55 @@ row.md-gutter [class*='col-'] {
   margin-bottom: 0.45rem !important;
   line-height: 1.2rem;
   font-size: 1rem; }
+
+/*----- candlestick chart --------*/
+#addax-candle-chart > div > div {
+  width: 100%;
+  height: 400px !important; }
+
+.addax-star {
+  margin-top: -4px; }
+
+body {
+  scrollbar-base-color: #C0C0C0;
+  scrollbar-base-color: #C0C0C0;
+  scrollbar-3dlight-color: #C0C0C0;
+  scrollbar-highlight-color: #C0C0C0;
+  scrollbar-track-color: #EBEBEB;
+  scrollbar-arrow-color: black;
+  scrollbar-shadow-color: #C0C0C0;
+  scrollbar-dark-shadow-color: #C0C0C0; }
+
+/*mozilla scrolbalken*/
+@-moz-document url-prefix(http://),url-prefix(https://) {
+  scrollbar {
+    -moz-appearance: none !important;
+    background: lime !important; }
+  thumb, scrollbarbutton {
+    -moz-appearance: none !important;
+    background-color: blue !important; }
+  thumb:hover, scrollbarbutton:hover {
+    -moz-appearance: none !important;
+    background-color: red !important; }
+  scrollbarbutton {
+    display: none !important; }
+  scrollbar[orient="vertical"] {
+    width: 3px; } }
+
+/**/
+::-webkit-scrollbar {
+  background: transparent;
+  width: 3px;
+  height: 10px;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.21);
+  border: solid rgba(0, 0, 0, 0) 2px;
+  transition: all 0.4s ease; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8); }
 
 @font-face {
   font-family: 'Pe-icon-7-stroke';

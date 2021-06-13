@@ -24,14 +24,14 @@
 // @import "common/common";
 // @import "common/header";
 // @import "common/menu";
-// @import "common/market";
+@import "common/market";
 @import "common/skin";
 // @import "common/forms";
-// @import "sections/charts";
+@import "sections/charts";
 // @import "common/slider";
 // @import "sections/dashboard";
 @import "sections/deposit_form";
-// @import "sections/candlecheck";
+@import "sections/candlecheck";
 // @import "common/login";
 
 @import "ui";

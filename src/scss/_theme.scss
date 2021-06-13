@@ -25,7 +25,8 @@
     display: flex;
     flex-direction: column;
     & p{
-        margin-bottom: 0.35rem;
+        margin-bottom: 0.05rem;
+        margin-top: 0.55rem;
     }
 }
 .mb{
@@ -36,6 +37,9 @@ border-bottom: 1px solid $cinza !important;
 }
 .summary-price p{
     margin-bottom: 0;
+}
+.summary-item{
+    margin-left: 1.25rem;
 }
 .summary-detail span{
     font-size: 0.9rem;
@@ -74,8 +78,8 @@ height: auto;
     margin-bottom: auto;
   }
 .btn-circle-sm {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     padding: 6px 0;
     font-size: 0.8rem !important;
@@ -87,19 +91,42 @@ height: auto;
   .btn-primary-light{
     background-color: rgba($verde2, 0.3)!important
   }
+  .btn-addax{
+      background-color: $cinza;
+      border: 1px solid $cinza1;
+      & .btn-addax:focus{
+          background-color: $verde;
+        }
+        & :hover{
+          background-color: $cinza1;
+      }
+  }
   
   .btn-primary-light i{
       color: $verde3!important;
+      margin-left: -0.15rem;
   }
 
   .btn-primary.disabled, .btn-primary:disabled{
       background-color: $cinza2 !important;
       border: 1px solid $cinza1 !important;
   }
-
+  .ml-6{
+      margin-left: 5rem;;
+  }
+  .bt-green{
+    display: contents;
+    color: $verde!important;
+    font-weight: 500;
+}
+  .bt-danger{
+    display: contents;
+    color: $vermelho!important;
+    font-weight: 400;
+}
   .swap-btn.active{
       background: $verde !important;
-      border: 1px solid $verde1 !important;
+      border: 1px solid $verde2 !important;
       color: $branco !important;
     }
     .swap-btn.active:hover{
@@ -107,13 +134,21 @@ height: auto;
         border: 1px solid $verde !important;
     }
   .swap-btn:hover{
-      background: $cinza2 !important;
-      border: 1px solid $cinza !important;
+      background: $cinza !important;
+      border: 1px solid $cinza1 !important;
       color: $cinza3 !important;
   }
+  .swap-btn:focus{
+      background: $verde !important;
+      border: 1px solid $verde2 !important;
+      color: $cinza3 !important;
+  }
+  .text-verde, .text-verde span, .text-verde a, .text-verde i, .text-verde span a i{
+      color: $verde !important;
+  }
   .swap-btn{
-    background: $cinza !important;
-    border: 1px solid $cinza1 !important;
+    background: $cinza1 !important;
+    border: 1px solid $cinza !important;
     color: $branco !important;
 }
 body.addax-dark{
