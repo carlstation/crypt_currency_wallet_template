@@ -3,14 +3,8 @@
 /* ------------------
 :: Import all css 
 ------------------ */
-// @import url(extra/bootstrap.min.css);
-// @import url(extra/animate.css);
-// @import url(extra/owl.carousel.min.css);
-// @import url(extra/magnific-popup.css);
-// @import url(extra/font-awesome.min.css);
-// @import url(extra/pe-icon-7-stroke.css);
-// @import url(extra/themify-icons.css);
 @import url(extra/fontawesome-free/css/all.min.css);
+
 @import "fonts";
 
 @import "addax_variables";
@@ -21,21 +15,12 @@
 @import "build/scss/AdminLTE.scss";
 // web fonts
 
-// @import "common/common";
-// @import "common/header";
-// @import "common/menu";
 @import "common/market";
 @import "common/skin";
-// @import "common/forms";
 @import "sections/charts";
-// @import "common/slider";
-// @import "sections/dashboard";
 @import "sections/deposit_form";
 @import "sections/candlecheck";
-// @import "common/login";
 
 @import "ui";
-// @import "common/mediaquery";
-// @import "extend";
 
 
