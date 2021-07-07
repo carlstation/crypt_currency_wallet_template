@@ -90,7 +90,7 @@
     }
   }
 }
-
+ 
 
 // Table backgrounds
 //
@@ -113,7 +113,7 @@
   .thead-dark {
     th {
       color: $table-dark-color;
-      background-color: $table-dark-bg;
+      // background-color: $table-dark-bg;
       border-color: $table-dark-border-color;
     }
   }
@@ -129,7 +129,7 @@
 
 .table-dark {
   color: $table-dark-color;
-  background-color: $table-dark-bg;
+  // background-color: $table-dark-bg;
 
   th,
   td,

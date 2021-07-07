@@ -335,6 +335,60 @@
 .table thead th {
   border-bottom: 1px solid #313C4E !important; }
 
+.table-dark, .table-dark > th, .table-dark > td {
+  background-color: transparent !important; }
+
+thead {
+  font-weight: 600; }
+
+tbody tr td > span {
+  color: gray; }
+
+tbody tr.success {
+  color: #128682 !important; }
+
+tbody tr.danger {
+  color: #d62e2f !important; }
+
+tbody tr.success:hover, tr.danger:hover, td > span {
+  color: white;
+  cursor: pointer; }
+
+tbody tr.success:hover {
+  background-color: rgba(18, 136, 132, 0.2) !important; }
+
+tbody tr.danger:hover {
+  background-color: rgba(214, 48, 49, 0.2) !important; }
+
+.token-info-body p {
+  margin-bottom: 0; }
+  .token-info-body p strong {
+    font-weight: bold;
+    color: #128884; }
+  .token-info-body p span.success {
+    color: #128884; }
+
+.token-info-links {
+  padding: 0.5em; }
+
+.info-link a {
+  display: -webkit-inline-box; }
+  .info-link a p, .info-link a i {
+    color: #56657F; }
+
+.info-link a i {
+  line-height: 0 !important;
+  margin-right: 0.6em; }
+
+.info-link a p {
+  margin-bottom: 0; }
+
+.info-link a:hover p, .info-link a:hover i {
+  color: #128884 !important; }
+
+.c-line {
+  border-bottom: 1px solid #45546d; }
+
 .identity {
   display: flex;
   flex-direction: column; }
@@ -751,6 +805,16 @@ body.addax-dark .addax-boxed-area {
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 600; }
+
+.addax-search {
+  height: 3em !important; }
+
+.col-100 {
+  width: 100%; }
+
+.a-center {
+  margin-right: auto;
+  margin-left: auto; }
 
 /* *************************
 :: 4.0 Preloader CSS
@@ -2130,9 +2194,7 @@ pre {
   .table-hover .table-light:hover > th {
     background-color: #ececf6; }
 
-.table-dark,
-.table-dark > th,
-.table-dark > td {
+.table-dark, .table-dark > th, .table-dark > td {
   background-color: #c1c3c7; }
 
 .table-dark th,
@@ -2262,7 +2324,6 @@ pre {
 
 .table .thead-dark th {
   color: #ffffff;
-  background-color: #212529;
   border-color: #383f45; }
 
 .table .thead-light th {
@@ -2271,8 +2332,7 @@ pre {
   border-color: #dee2e6; }
 
 .table-dark {
-  color: #ffffff;
-  background-color: #212529; }
+  color: #ffffff; }
   .table-dark th,
   .table-dark td,
   .table-dark thead th {
@@ -16702,7 +16762,7 @@ html.maximized-card {
   height: calc(2.25rem + 2px); }
 
 .select2-container--default.select2-container--open .select2-selection--single {
-  border-color: #80bdff; }
+  border-color: #35e4de; }
 
 .select2-container--default .select2-dropdown {
   border: 1px solid #ced4da; }
@@ -16751,10 +16811,10 @@ html.maximized-card {
     color: #1F2D3D; }
 
 .select2-container--default .select2-results__option--highlighted {
-  background-color: #007bff;
+  background-color: #128884;
   color: #ffffff; }
   .select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[aria-selected]:hover {
-    background-color: #0074f0;
+    background-color: #107a77;
     color: #ffffff; }
 
 .select2-container--default .select2-selection--multiple {
@@ -16774,8 +16834,8 @@ html.maximized-card {
       border: 0;
       margin-top: 6px; }
   .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #007bff;
-    border-color: #006fe6;
+    background-color: #128884;
+    border-color: #0f716e;
     color: #ffffff;
     padding: 0 10px;
     margin-top: .31rem; }
@@ -18970,7 +19030,7 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
     background-color: #28a745; }
 
 #toast-container .toast {
-  background-color: #007bff; }
+  background-color: #128884; }
 
 #toast-container .toast-success {
   background-color: #28a745; }
@@ -22778,7 +22838,7 @@ pre {
 
 blockquote {
   background: #ffffff;
-  border-left: 0.7rem solid #007bff;
+  border-left: 0.7rem solid #128884;
   margin: 1.5em .7rem;
   padding: 0.5em .7rem; }
   .box blockquote {
@@ -22791,7 +22851,7 @@ blockquote {
   blockquote h4,
   blockquote h5,
   blockquote h6 {
-    color: #007bff;
+    color: #128884;
     font-size: 1.25rem;
     font-weight: 600; }
   blockquote.quote-primary {

@@ -1,6 +1,5 @@
 // escala de cores 
 $verde : #128884;
-
 $verde1 : #03414D  ;
 $verde2 : #4BB5AE;
 $verde3 : #A8E3DF;
@@ -16,7 +15,8 @@ $cinza2: #56657F;
 $cinza3: #D9D9D9;
 
 $branco: white;
-$dark:          $cinza !default;
+$dark: $cinza !default;
+$primary: $verde;
 
 @mixin maingradient(){
     background: $verde1;

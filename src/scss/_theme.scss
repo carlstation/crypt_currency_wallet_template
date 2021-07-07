@@ -21,6 +21,67 @@
     .table thead th{
         border-bottom: 1px solid $cinza !important;
     }
+    .table-dark, .table-dark > th, .table-dark > td{
+        background-color: transparent!important;
+    }
+    thead{
+        font-weight: 600;
+    }
+    tbody tr td > span{
+        color: gray;
+    }
+    tbody tr.success{
+        color: darken($color: $primary, $amount: 0.5)!important;
+    }
+    tbody tr.danger{
+        color: darken($color: $vermelho, $amount: 0.5)!important;
+    }
+    tbody tr.success:hover, tr.danger:hover, td > span{
+        color: white;
+        cursor: pointer;
+    }
+    tbody tr.success:hover{
+        background-color: rgba($primary, 0.2)!important;
+    }
+    tbody tr.danger:hover{
+        background-color: rgba($vermelho, 0.2)!important;
+    }
+    .token-info-body p{
+        margin-bottom: 0;
+        & strong{
+            font-weight: bold;
+            color: $primary;
+        }
+        & span.success{
+            color: $primary;
+        }
+    }
+    .token-info-links{
+        padding: 0.5em;
+    }
+    .info-link a{
+        display: -webkit-inline-box;
+        & p, i{
+            color: $cinza2;
+        }
+    }
+    .info-link a i{
+        line-height: 0!important;
+        margin-right: 0.6em;
+    }
+    .info-link a p{
+        margin-bottom: 0;
+    }
+    .info-link a:hover{
+        & p, i{
+            color: $primary!important;
+        }
+    }
+
+    .c-line{
+        border-bottom: 1px solid #45546d;
+    }
+    
 .identity{
     display: flex;
     flex-direction: column;
@@ -453,4 +514,16 @@ body.addax-dark .addax-boxed-area{
     margin-bottom: 0px;
     font-size: 14px;
     font-weight: 600;
+}
+
+.addax-search{
+    height: 3em!important;
+
+}
+.col-100{
+    width:100%;
+}
+.a-center{
+    margin-right: auto;
+    margin-left: auto;
 }
