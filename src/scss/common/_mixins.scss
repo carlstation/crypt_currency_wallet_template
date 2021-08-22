@@ -1,0 +1,22 @@
+
+
+
+
+
+@mixin maingradient(){
+    background: $verde1;
+    background: -moz-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
+    background: -webkit-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
+    background: linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$verde1,endColorstr=$verde,GradientType=1);
+}
+
+@mixin mainshadow(){
+    /* secondary/very-dark */
+    background: $cinza1;
+    // background-color: $cinza1;
+    /* out/big shadow */
+    color : $verde!important;
+    box-shadow: -2px -2px 8px rgba(72, 80, 99, 0.15), 2px 2px 12px rgba(0, 0, 0, 0.22);
+    // border-radius: 4px;
+}

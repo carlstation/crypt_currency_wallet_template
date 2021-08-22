@@ -1,7 +1,14 @@
 
-    /*---- Dark ----*/
+/*---- Dark ----*/
+.logo-menu{
+   flex-grow: 1; 
+}
 .card{
     border-radius: 0.8rem;
+    background: transparent;
+}
+.content-wrapper{
+    background: $dark-background-addax!important;
 }
 .addax-card{
     background-color: $verde !important;
@@ -26,6 +33,9 @@
 .card-title{
     margin-top: 1rem!important;
     margin-bottom:1rem!important;
+}
+.token-image {
+    height: fit-content;
 }
 // .card-text{
 //     margin-bottom:1rem!important;

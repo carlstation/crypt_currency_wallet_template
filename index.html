@@ -25,7 +25,7 @@
       <li class="nav-item d-flex">
         <a class="nav-link margin-auto" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="col-auto">
+      <li class="logo-menu">
         <a href="#" class="brand-link">
           <div class="addax-logo">
             <img src="images/logo.png" alt="Addax Logo" class="">
@@ -56,9 +56,9 @@
       </div>
 
     <!-- Right navbar links -->
-    <ul class="navbar-nav">
+    <ul class="navbar-nav col-auto">
      
-      <li class="nav-item swap">
+      <li class="nav-item swap col-auto">
         <div class="swap">
           <img src="images/favicon.png" alt="Addax Swap" class="mr-2">
           <h5 class="swap_value">$</h5>
@@ -67,7 +67,7 @@
       </li>
 
 
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-sm-inline-block col-auto">
         <a class="nav-link btn btn-primary" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="pe-7s-wallet"></i> Connect Wallet
         </a>
@@ -85,18 +85,6 @@
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <!-- <a href="#" class="brand-link mt-3">
-      
-        <div class="addax-logo mb-4">
-          <img src="images/logo.png" alt="Addax Logo" class="">
-        </div>
-
-        <div class="addax-icon mb-4 d-none">
-          <img src="images/favicon.png" alt="Addax Logo" class="">
-        </div>
-    </a> -->
-
     <!-- Sidebar -->
     <div class="sidebar">
 
@@ -225,132 +213,87 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header pt-5 pl-5 pr-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-white">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <!-- <li class="breadcrumb-item active">Dashboard</li> -->
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+    
 
     <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid p-5">
-        <div class="row">
-
-          <!-- content here -->
-          <!-- col start -->
-          <div class="col-lg-4">
-
-            <div class="card">
-              <div class="card-body text-center text-center addax-card">
-                <i class="fas fa-arrow-circle-right"></i>
-                <p class="card-text">
-                  Make Migration
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-lg-4">
-
-            <div class="card">
-              <div class="card-body text-center text-center addax-card">
-                <i class="fas fa-arrow-circle-right"></i>
-                <p class="card-text">
-                  Make Migration
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-lg-4">
-
-            <div class="card">
-              <div class="card-body text-center text-center addax-card">
-                <i class="fas fa-arrow-circle-right"></i>
-                <p class="card-text">
-                  Make Migration
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <!-- col end -->
-
-        </div>
+      <div class="container-fluid">
+        
         <!-- /.row -->
-
-        <!-- new row -->
+               <!-- new row -->
        <div class="row">
           <!-- /.col-md-8 -->
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <div class="card">
-            <div class="card-header">
-              <h5 class="m-0">Welcome to Addax</h5>
-            </div>
-            <div class="dvs-line"></div>
-            <div class="card-body">
-              <h6 class="card-title">Live Charts</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
 
-              <h6 class="card-title">Limit Orders</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui</p>
+            <div class="mt-3 mb-3 ui-sortable-handle" style="cursor: move;">
+              <!-- header -->
+              <div class="d-inline-flex">
+                <div class="summary-panel d-flex">
+                  <div class="token-image margin-auto">
+                    <img src="images/favicon.png" class="mr-3 img-circle elevation-2" alt="">
+                  </div>
+                  <div class="token">
+                    <h4 class="text-white">Addax</h4>
+                    <h4 class="m-0 text-white d-inline-flex">$0.939246 
+                      <span class="danger">-0.65%</span>
+                    </h4>
+                  </div>
+
+                </div>
+  
+                <div class="summary-panel d-flex">
+                  
+                  <div class="token ml-5">
+                    <p class="mt-3 text-cinza2">24h Volume</p>
+                    <h5 class="m-0">$1.5392</h5>
+                  </div>
+                </div>
+  
+                <div class="summary-panel d-flex">
+                  
+                  <div class="token ml-5">
+                    <p class="mt-3 text-cinza2">Liquidity</p>
+                    <h5 class="m-0">$-14.823%</h5>
+                  </div>
+                </div>
+
+                <div class="summary-panel d-flex">
+                  
+                  <div class="token ml-5">
+                    <p class="mt-3 text-cinza2">Marketcap</p>
+                    <h5 class="m-0">$-14.823</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- header -->
               
-              
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+
+            <div class="">
+             <!-- body inner start -->
+             
+            <div class="tradingview-widget-container mb-3">
+              <div id="addax-candle-chart"></div>
+            </div>
+            
+            <!-- body inner end -->
           </div>
 
+          </div>
         </div>
         <!-- /.col-md-8 -->
 
-        <!-- /.col-md-3 -->
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="m-0">Lorem Ipsum</h5>
-            </div>
-            <div class="dvs-line"></div>
-            <div class="card-body">
-              <h6 class="card-title">Lorem ipsum sir dolor</h6>
-
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- /.col-md-6 -->
+       
        </div>
+       <!-- end row -->
+        <!-- /.row -->
+
         <!-- new row -->
       </div><!-- /.container-fluid -->
-    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
   <footer class="main-footer">
@@ -377,4 +320,5 @@
 <!-- Tradingview market charts -->
 <script src="src/js/plugins/tradingview/tv.js"></script>
 <!-- Active Js Scripts -->
+<script src="src/js/bundle.js"></script>
 <script src="src/js/active.js"></script>

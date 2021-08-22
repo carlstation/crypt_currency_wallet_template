@@ -1,40 +1,78 @@
-// escala de cores 
-$verde : #128884;
-$verde1 : #03414D  ;
-$verde2 : #4BB5AE;
-$verde3 : #A8E3DF;
+//
+// ADDAX Color Scheme
+//
+// base colors
+$branco: white;
+$preto: black;
 
 $vermelho : #D63031;
 $amarelo: #fdd247;
 
-$preto: #010F12;
-$cinza: #313C4E;
+// pallete color scheme
+$color1: #0B132B;
+    $color1-d100: $preto; 
+    $color1-d87: #010206; 
+    $color1-d75: #03050B;
+    $color1-d50: #060A16;
+    $color1-d25: #090F21;
+    $color1-l25: #233C87;
+    $color1-l50: #4B6CD0;
+    $color1-l75: #A5B6E8;
+    $color1-l87: #D2DAF3; 
+    $color1-l100: $branco; 
 
-$cinza1: #212936;
-$cinza2: #56657F;
-$cinza3: #D9D9D9;
+$color2: #1C2541;
+$color3: #3A506B;
+    $color3-d100: $preto;
+    $color3-d87: #070A0D;
+    $color3-d75: #0E141B;
+    $color3-d50: #1D2835;
+    $color3-d25: #2B3B50;
+    $color3-l25: #5779A2;
+    $color3-l50: #8EA6C2;
+    $color3-l75: #C7D2E1;
+    $color3-l87: #E3E9F0;
+    $color3-l100: $branco;
 
-$branco: white;
+$color4: #5BC0BE;
+    $color4-d100: $preto;
+    $color4-d87: #0A1919;
+    $color4-d75: #143232;
+    $color4-d62: #1D4C4B;
+    $color4-d50: #276564;
+    $color4-d25: #3B9796;
+    $color4-l50: #ACDFDE;
+    $color4-l75: #D6EFEF;
+    $color4-l87: #EAF7F7;
+    $color4-l100: $branco;
+
+$color5: #6FFFE9;
+    $color5-d100: $preto;
+    $color5-d87: #002E27;
+    $color5-d75: #005C4E;
+    $color5-d50: #00B89C;
+    $color5-d25: #14FFDC;
+    $color5-l25: #94FFEF;
+    $color5-l50: #B8FFF4;
+    $color5-l75: #DBFFFA;
+    $color5-l87: #EDFFFC;
+
+//
+// theme colors
+$verde : $color4-d25;
+    $verde1 : $color4-d62;
+    $verde2 : $color4;
+    $verde3 : $color5-l50;
+
+$cinza: $color3-d25;
+    $cinza1: $color3-d50;
+    $cinza2: $color3-l50;
+    $cinza3: $color3-l100;
+
+
 $dark: $cinza !default;
 $primary: $verde;
 
-@mixin maingradient(){
-    background: $verde1;
-    background: -moz-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
-    background: -webkit-linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
-    background: linear-gradient(90deg, $verde1 0%, $verde3 50%, $verde 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$verde1,endColorstr=$verde,GradientType=1);
-}
-
-@mixin mainshadow(){
-    /* secondary/very-dark */
-    background: $cinza1;
-    // background-color: $cinza1;
-    /* out/big shadow */
-    color : $verde!important;
-    box-shadow: -2px -2px 8px rgba(72, 80, 99, 0.15), 2px 2px 12px rgba(0, 0, 0, 0.22);
-    // border-radius: 4px;
-}
 
 // cores do tema
 $theme-colors:(
@@ -50,3 +88,7 @@ $theme-colors:(
 
 
 $addax_font: 'Jost', sans-serif;
+
+$dark-background-addax: $color1-d75;
+
+
