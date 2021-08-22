@@ -378,13 +378,14 @@
     & > .nav-link:focus, & > .nav-link.active p, & .nav-link.active > svg.icon path{
       
       // @include mainshadow();
-      background-color: $sidebar-dark-hover-bg;
+      // background-color: $sidebar-dark-hover-bg;
       fill: $verde;
       color: $verde
     }
 
     > .nav-link.active {
-      @include mainshadow();
+      // @include mainshadow();
+      background: rgba($primary, 0.1);
 
       // color: $verde;
       // color: $sidebar-dark-hover-color;
@@ -415,6 +416,9 @@
       &:hover,
       &:focus {
         text-decoration: none;
+        color: white;
+        fill: $cinza;
+        background: rgba($cinza, 0.15)
       }
     }
   }
@@ -427,8 +431,7 @@
 
         &:hover,
         &:focus {
-          background-color: $sidebar-dark-submenu-hover-bg;
-          color: $sidebar-dark-submenu-hover-color;
+          background-color: rgba($cinza, 0.15);
         }
       }
 
@@ -676,7 +679,7 @@
   &.nav-sidebar > .nav-item {
     > .nav-link {
       &.active {
-        background: inherit;
+        background: $primary;
         border-left: 3px solid transparent;
         box-shadow: none;
 

@@ -229,7 +229,6 @@ body.addax-dark .form-control  {
     color: $branco;
     background-color: $cinza1;
     background-clip: padding-box;
-    border: 1px solid $cinza2;
     border-radius: 0.35rem!important;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -237,6 +236,7 @@ body.addax-dark .form-control  {
 body.addax-dark .card{
     border-radius: 0.35rem;
 }
+
 
 .addax-dark{
     background: $cinza;
@@ -288,7 +288,7 @@ g[opacity="0.4"]{
 .addax-logo img, .addax-icon img{
     display: flex;
     height: auto;
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -443,8 +443,6 @@ body.addax-dark .addax-boxed-area{
     background: #ca3a28;
 }
 .addax-header{
-    box-shadow: 0 2px 20px #f1f1f1;
-    background: $branco;
     position: fixed;
     top: 0;
     left: 0;
@@ -452,6 +450,10 @@ body.addax-dark .addax-boxed-area{
     z-index: 9999;
     height: 70px;
 }
+.full_header, .sidebar-mini.sidebar-collapse .main-header.full_header {
+    margin-left: 0!important;
+}
+
 .addax-mega-dropdown-menu{
     position: relative;
 }

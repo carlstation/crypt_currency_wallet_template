@@ -46,6 +46,22 @@
     color: $verde!important;
     font-weight: 600;
 }
+
+.search-icon {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    z-index: 5;
+    & > button i {
+        color: var(--secondary);
+    }
+}
+
+.addax-search {
+    & :focus {
+        border: 1px solid $cinza2
+    }
+}
 // body.addax-dark .addax-market-status{
 //     background: #131722;
 //     box-shadow: none;
