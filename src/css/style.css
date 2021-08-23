@@ -556,8 +556,11 @@ body.addax-dark .form-control {
 body.addax-dark .card {
   border-radius: 0.35rem; }
 
+.content-wrapper {
+  background: #03050B; }
+
 .addax-dark {
-  background: #2B3B50; }
+  background: #03050B; }
 
 .addax-dark .icon-big {
   color: white; }
@@ -9648,10 +9651,8 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
   .sidebar-mini-md .main-header::before {
     margin-left: 4.6rem; } }
 
-.content-wrapper {
-  background: #2B3B50; }
-  .content-wrapper > .content {
-    padding: 0 0.5rem; }
+.content-wrapper > .content {
+  padding: 0 0.5rem; }
 
 .main-sidebar, .main-sidebar::before {
   transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -26075,10 +26076,6 @@ table th {
   border-radius: 0.8rem;
   background: transparent; }
 
-.card-table {
-  background: #1D2835;
-  border: 1px solid #2B3B50; }
-
 .content-wrapper {
   background: #03050B !important; }
 
@@ -26134,21 +26131,50 @@ table th {
   border: 1px solid #8EA6C2; }
 
 .dashboard-bottom-section {
-  height: 400px; }
+  height: 400px;
+  margin-bottom: 2em; }
+  .dashboard-bottom-section .ads {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle; }
+    .dashboard-bottom-section .ads .ads-card {
+      position: relative;
+      background: #1D2835;
+      border: 1px solid #2B3B50;
+      height: 400px;
+      width: 400px;
+      color: white; }
+      .dashboard-bottom-section .ads .ads-card .ads-content .ads-img {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .dashboard-bottom-section .ads .ads-card .ads-button {
+        text-align: center;
+        color: #8EA6C2;
+        background: #1D2835;
+        font-size: 1rem;
+        width: 100%;
+        bottom: 0;
+        padding: 1em;
+        position: absolute; }
+  .dashboard-bottom-section .card-table {
+    background: #1D2835;
+    border: 1px solid #2B3B50; }
 
 .pbar-success {
-  background: #1D4C4B;
-  background: -moz-linear-gradient(90deg, #1D4C4B 0%, #3B9796 100%);
-  background: -webkit-linear-gradient(90deg, #1D4C4B 0%, #3B9796 100%);
-  background: linear-gradient(90deg, #1D4C4B 0%, #3B9796 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$verde1,endColorstr=$verde,GradientType=1); }
+  background: #00B89C;
+  background: -moz-linear-gradient(90deg, #00B89C 0%, #3B9796 100%);
+  background: -webkit-linear-gradient(90deg, #00B89C 0%, #3B9796 100%);
+  background: linear-gradient(90deg, #00B89C 0%, #3B9796 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color5-d50,endColorstr=$color4-d25,GradientType=1); }
 
 .pbar-danger {
-  background: #D63031;
-  background: -moz-linear-gradient(90deg, #d52d2e 0%, #D63031 100%);
-  background: -webkit-linear-gradient(90deg, #d52d2e 0%, #D63031 100%);
-  background: linear-gradient(90deg, #d52d2e 0%, #D63031 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$vermelho-d75,endColorstr=$verde,GradientType=1); }
+  background: #d73435;
+  background: -moz-linear-gradient(90deg, #d52c2d 0%, #d73435 100%);
+  background: -webkit-linear-gradient(90deg, #d52c2d 0%, #d73435 100%);
+  background: linear-gradient(90deg, #d52c2d 0%, #d73435 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$vermelho-d87,endColorstr=$vermelho-l87,GradientType=1); }
 
 /*---------------------------------------
 ------------------- chart -----------------

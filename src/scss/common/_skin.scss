@@ -7,10 +7,7 @@
     border-radius: 0.8rem;
     background: transparent;
 }
-.card-table {
-    background: $cinza1;
-    border: 1px solid $cinza;
-}
+
 .content-wrapper{
     background: $dark-background-addax!important;
 }
@@ -76,8 +73,49 @@
         border: 1px solid $cinza2
     }
 }
+
+$bottom_section_size: 400px;
 .dashboard-bottom-section{
-    height: 400px;
+    height: $bottom_section_size;
+    margin-bottom: 2em;
+    .ads{
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        .ads-card {
+            position:relative;
+            background: $color3-d50;
+            border: 1px solid $color3-d25;
+            height: $bottom_section_size;
+            width: $bottom_section_size;
+            color: $cinza3;
+
+            .ads-content {
+                & .ads-img{
+                    width: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+
+            }
+            .ads-button{
+                text-align: center;
+                color: $cinza2;
+                background: $color3-d50;
+                font-size: 1rem;
+                width: 100%;
+                bottom:0;
+                padding: 1em;
+                position: absolute;
+            }
+        }
+    }
+
+    & .card-table {
+        background: $color3-d50;
+        border: 1px solid $color3-d25;
+    }
 }
 
 .pbar-success{

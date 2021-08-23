@@ -262,9 +262,11 @@ body.addax-dark .card{
     border-radius: 0.35rem;
 }
 
-
+.content-wrapper{
+    background: $dark-background-addax;
+} 
 .addax-dark{
-    background: $cinza;
+    background: $dark-background-addax;
 }
 .addax-dark .icon-big{
     color: $branco;
