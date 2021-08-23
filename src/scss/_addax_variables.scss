@@ -6,6 +6,17 @@ $branco: white;
 $preto: black;
 
 $vermelho : #D63031;
+    $vermelho-d87: darken($vermelho, 0.87);
+    $vermelho-d75: darken($vermelho, 0.75);
+    $vermelho-d62: darken($vermelho, 0.62);
+    $vermelho-d50: darken($vermelho, 0.50);
+    $vermelho-d25: darken($vermelho, 0.25);
+    $vermelho-l87: lighten($vermelho, 0.87);
+    $vermelho-l75: lighten($vermelho, 0.75);
+    $vermelho-l62: lighten($vermelho, 0.62);
+    $vermelho-l50: lighten($vermelho, 0.50);
+    $vermelho-l25: lighten($vermelho, 0.25);
+
 $amarelo: #fdd247;
 
 // pallete color scheme
@@ -90,5 +101,7 @@ $theme-colors:(
 $addax_font: 'Jost', sans-serif;
 
 $dark-background-addax: $color1-d75;
+
+$addax-input-border: 2px;
 
 

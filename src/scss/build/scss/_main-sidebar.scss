@@ -386,7 +386,7 @@
     > .nav-link.active {
       // @include mainshadow();
       background: rgba($primary, 0.1);
-
+      border: none !important;
       // color: $verde;
       // color: $sidebar-dark-hover-color;
 

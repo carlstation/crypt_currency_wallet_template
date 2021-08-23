@@ -41,10 +41,10 @@
         cursor: pointer;
     }
     tbody tr.success:hover{
-        background-color: rgba($primary, 0.2)!important;
+        background-color: rgba($primary, 0.1)!important;
     }
     tbody tr.danger:hover{
-        background-color: rgba($vermelho, 0.2)!important;
+        background-color: rgba($vermelho, 0.1)!important;
     }
     .token-info-body p{
         margin-bottom: 0;
@@ -88,6 +88,14 @@
     & p{
         margin-bottom: 0.05rem;
         margin-top: 0.55rem;
+    }
+}
+.token {
+    & span {
+        font-size: 0.6em;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 0.5em;
     }
 }
 .mb{
@@ -188,28 +196,42 @@ border-bottom: 1px solid $cinza !important;
     color: $vermelho!important;
     font-weight: 400;
 }
-  .swap-btn.active{
-      background: $verde !important;
-      border: 1px solid $verde2 !important;
-      color: $branco !important;
-    }
-    .swap-btn.active:hover{
-        background: $verde1 !important;
-        border: 1px solid $verde !important;
-    }
-  .swap-btn:hover{
-      background: $cinza !important;
-      border: 1px solid $cinza1 !important;
-      color: $cinza3 !important;
-  }
-  .swap-btn:focus{
-      background: $verde !important;
-      border: 1px solid $verde2 !important;
-      color: $cinza3 !important;
-  }
-  .text-verde, .text-verde span, .text-verde a, .text-verde i, .text-verde span a i{
-      color: $verde !important;
-  }
+.swap-btn.active{
+  background: $verde !important;
+  border: 1px solid $verde2 !important;
+  color: $branco !important;
+}
+.swap-btn.active:hover{
+    background: $verde1 !important;
+    border: 1px solid $verde !important;
+}
+.swap-btn:hover{
+  background: $cinza !important;
+  border: 1px solid $cinza1 !important;
+  color: $cinza3 !important;
+}
+.swap-btn:focus{
+  background: $verde !important;
+  border: 1px solid $verde2 !important;
+  color: $cinza3 !important;
+}
+.text-verde, .text-verde span, .text-verde a, .text-verde i, .text-verde span a i{
+  color: $verde !important;
+}
+
+.text-cinza {
+    color: $cinza!important;
+}
+.text-cinza1 {
+    color: $cinza1!important;
+}
+.text-cinza2 {
+    color: $cinza2!important;
+}
+.text-cinza3 {
+    color: $cinza3!important;
+}
+
   .swap-btn{
     background: $cinza1 !important;
     border: 1px solid $cinza !important;
