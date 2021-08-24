@@ -1,4 +1,51 @@
 
+
+
+
+@media only screen and (max-width: 414px) {
+    .container-fluid{
+        padding-bottom: 3em;
+    }
+    .swap{
+        margin-right: 0;
+    }
+    thead th:not(:first-child) {
+        display: none;
+    }
+    td, th {
+        display: block;
+        clear: both;
+    }
+    td[data-th]:before {
+        content: attr(data-th);
+        float: left;
+    }
+    
+    // .container-fluid {
+    //     padding-right: 0!important;
+    //     padding-left: 0!important;
+    // }
+    // .btn-group{ 
+    //     border-radius: 12px!important;
+    //     margin: 0.5em 1em;
+    // }
+    // .addax-sponsor{
+    //     margin-left: 0.5em;
+    // }
+    // .table_div_line{
+    //     display: block;
+    // }
+    // body.addax-dark .card{
+    //     border-radius: 0!important;
+    // }
+    .pl-3{
+        padding-left: 0!important;
+    }
+    .pr-3{
+        padding-right: 0!important;
+    }
+}
+
 @media (min-width: 576px) {
     .form-inline .input-group, .form-inline .custom-select {
         width: 100%!important;

@@ -288,6 +288,97 @@ if(chartsIndiv.length > 0){
 }
 
 jQuery(document).ready(function() {
+
+	function mobileChartView(x) {
+    if (x.matches) { // If media query matches
+      jQuery('#tableRow').addClass('hide');
+      jQuery('#tableRow').removeClass('pt-1');
+      jQuery('#tokenRow').addClass('hide');
+      jQuery('#candlechartHeader').addClass('hide');
+      jQuery('mobile-nav').removeClass('hide');
+      jQuery('.mobile-header').addClass('pb-0');
+	  jQuery('#candlechartRow').removeClass('pb-2');
+	  jQuery('#candlechartRow').addClass('pb-4');
+
+    } else {
+      jQuery('mobile-nav').addClass('hide');
+      jQuery('#tableRow').removeClass('hide');
+      jQuery('#tableRow').addClass('pt-1');
+      jQuery('#tokenRow').removeClass('hide');
+      jQuery('#candlechartHeader').removeClass('hide');
+      jQuery('.mobile-header').removeClass('pb-0');
+	  jQuery('#candlechartRow').addClass('pb-2');
+	  jQuery('#candlechartRow').removeClass('pb-4');
+
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 414px)")
+  mobileChartView(x) // Call listener function at run time
+  x.addListener(mobileChartView) // Attach listener function on state changes
+
+  // changing tabs on mobile menu
+  // mobile menu action menu
+  jQuery(document).on('click', '#chartToggle', function(){
+    jQuery('#candlechartRow').removeClass('hide');
+    removeToggleActive();
+    jQuery('#chartToggle').addClass('active');
+
+    jQuery('#tableRow').addClass('hide');
+    jQuery('#tokenRow').addClass('hide');
+    jQuery('#trendRow').addClass('hide');
+  });
+  //
+  jQuery(document).on('click', '#tradeToggle', function(){
+    jQuery('#tableRow').removeClass('hide');
+    removeToggleActive();
+    jQuery('#tradeToggle').addClass('active');
+
+    jQuery('#tokenRow').addClass('hide');
+    jQuery('#candlechartRow').addClass('hide');
+    jQuery('#trendRow').addClass('hide');
+  });
+  //
+  jQuery(document).on('click', '#swapToggle', function(){
+    jQuery('#tokenRow').removeClass('hide');
+    removeToggleActive();
+    jQuery('#swapToggle').addClass('active');
+
+    jQuery('#candlechartRow').addClass('hide');
+    jQuery('#tableRow').addClass('hide');
+    jQuery('#trendRow').addClass('hide');
+  });
+  //
+  jQuery(document).on('click', '#trendToggle', function(e){
+    console.log(e);
+    jQuery('#trendRow').removeClass('hide');
+    removeToggleActive();
+    jQuery('#trendToggle').addClass('active');
+
+    jQuery('#candlechartRow').addClass('hide');
+    jQuery('#tableRow').addClass('hide');
+    jQuery('#tokenRow').addClass('hide');
+  });
+
+  function removeToggleActive(){
+    jQuery('#chartToggle').removeClass('active');
+    jQuery('#tradeToggle').removeClass('active');
+    jQuery('#swapToggle').removeClass('active');
+    jQuery('#trendToggle').removeClass('active');
+  }
+
+  jQuery(document).on('click', '.btn-dropdown-mobile-toggle', function(e) {
+    e.preventDefault();
+    jQuery('.mobile-dropdown-menu').toggleClass('shown');
+  });
+
+  // mobile menu end here
+
+  jQuery(document).on('click', '.addax-header i.menu-toggle', function(){
+    jQuery('.addax-mobile-menu').toggleClass('show');
+    jQuery(this).toggleClass('open')
+  });
+
   jQuery(document).on('click', '.addax-header i.menu-toggle', function(){
     jQuery('.addax-mobile-menu').toggleClass('show');
     jQuery(this).toggleClass('open')

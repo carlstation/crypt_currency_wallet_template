@@ -1,6 +1,26 @@
 
 
 
+@mixin blurred {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+@mixin ease-transition-04{
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+@mixin margin-center {
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+@mixin margin-middle {
+    margin-top: auto!important;
+    margin-bottom: auto!important;
+}
 
 
 @mixin maingradient(){

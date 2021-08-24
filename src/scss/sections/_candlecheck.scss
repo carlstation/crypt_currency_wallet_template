@@ -1,9 +1,25 @@
 
 /*----- candlestick chart --------*/
-#addax-candle-chart > div > div{
-  width: 100%;
-  height: 400px !important;
+.dashboard-wrapper-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
+.tradingview-widget-container {
+    flex-grow: 1;
+    display: flex;
+}
+#addax-candle-chart {
+  height: auto;
+  flex-grow: 1;
+
+  & > div > div{
+    width: 100%;
+    // height: 400px !important;
+  }
+}
+
+
 .addax-star{
   margin-top: -4px;
 }

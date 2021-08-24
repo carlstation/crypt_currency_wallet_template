@@ -76,8 +76,7 @@
 
 $bottom_section_size: 400px;
 .dashboard-bottom-section{
-    height: $bottom_section_size;
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
     .ads{
         display: flex;
         justify-content: center;
@@ -115,7 +114,20 @@ $bottom_section_size: 400px;
     & .card-table {
         background: $color3-d50;
         border: 1px solid $color3-d25;
+        min-height: $bottom_section_size;
     }
+
+    & .transaction-table {
+        flex-grow: 1;
+    }
+}
+
+
+.fwrap{
+    flex-wrap: wrap;
+}
+.hide {
+    display: none!important;
 }
 
 .pbar-success{
