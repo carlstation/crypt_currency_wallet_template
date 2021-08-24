@@ -297,6 +297,7 @@ function mobileChartView(x) {
 	  jQuery('#tableRow').addClass('hide');
 	  jQuery('mobile-nav').removeClass('hide');
 	  jQuery('.mobile-header').addClass('pb-0');
+	  jQuery('.mobile-action-menu').removeClass('hide');
 	  jQuery('#candlechartRow').removeClass('pb-2');
 	  jQuery('#candlechartRow').addClass('pb-4');
 

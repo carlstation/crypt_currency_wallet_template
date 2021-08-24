@@ -443,6 +443,11 @@ mobile-nav {
       margin-top: 0;
       margin-right: 0.125rem; }
 
+.chart-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; }
+
 .margin-wrapper {
   margin-left: 250px !important; }
 
