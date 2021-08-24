@@ -141,7 +141,9 @@ mobile-nav{
         }
     }
 }
-
+.margin-wrapper {
+    margin-left: 250px!important;
+}
 #tokenRow, #candlechartRow, #tableRow, #trendRow{
     @include ease-transition-04;
     opacity: 1;

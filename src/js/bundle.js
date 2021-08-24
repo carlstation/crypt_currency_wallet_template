@@ -289,29 +289,29 @@ if(chartsIndiv.length > 0){
 
 jQuery(document).ready(function() {
 
-	function mobileChartView(x) {
-    if (x.matches) { // If media query matches
-      jQuery('#tableRow').addClass('hide');
-      jQuery('#tableRow').removeClass('pt-1');
-      jQuery('#tokenRow').addClass('hide');
-      jQuery('#candlechartHeader').addClass('hide');
-      jQuery('mobile-nav').removeClass('hide');
-      jQuery('.mobile-header').addClass('pb-0');
+function mobileChartView(x) {
+	if (x.matches) { 
+	// If media query matches with mobile size
+	  jQuery('#tableRow').removeClass('pt-1');
+	  jQuery('#candlechartHeader').addClass('hide');
+	  jQuery('#tableRow').addClass('hide');
+	  jQuery('mobile-nav').removeClass('hide');
+	  jQuery('.mobile-header').addClass('pb-0');
 	  jQuery('#candlechartRow').removeClass('pb-2');
 	  jQuery('#candlechartRow').addClass('pb-4');
 
-    } else {
-      jQuery('mobile-nav').addClass('hide');
-      jQuery('#tableRow').removeClass('hide');
-      jQuery('#tableRow').addClass('pt-1');
-      jQuery('#tokenRow').removeClass('hide');
-      jQuery('#candlechartHeader').removeClass('hide');
-      jQuery('.mobile-header').removeClass('pb-0');
+	} else {
+	  jQuery('mobile-nav').addClass('hide');
+	  jQuery('.mobile-action-menu').addClass('hide');
+	  jQuery('#tableRow').addClass('pt-1');
+	  jQuery('#tableRow').removeClass('hide');
+	  jQuery('#candlechartHeader').removeClass('hide');
+	  jQuery('.mobile-header').removeClass('pb-0');
 	  jQuery('#candlechartRow').addClass('pb-2');
 	  jQuery('#candlechartRow').removeClass('pb-4');
 
-    }
-  }
+	}
+}
   
   var x = window.matchMedia("(max-width: 414px)")
   mobileChartView(x) // Call listener function at run time

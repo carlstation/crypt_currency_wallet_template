@@ -443,6 +443,9 @@ mobile-nav {
       margin-top: 0;
       margin-right: 0.125rem; }
 
+.margin-wrapper {
+  margin-left: 250px !important; }
+
 #tokenRow, #candlechartRow, #tableRow, #trendRow {
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -925,6 +928,14 @@ body.addax-dark .addax-boxed-area {
 .a-center {
   margin-right: auto;
   margin-left: auto; }
+
+@media only screen and (max-width: 995px) {
+  .margin-wrapper {
+    margin-left: 4.6rem !important; } }
+
+@media only screen and (max-width: 991px) {
+  .margin-wrapper {
+    margin-left: 0 !important; } }
 
 @media only screen and (max-width: 414px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
