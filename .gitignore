@@ -1,3 +1,4 @@
 # Node Modules
 /node_modules
 /admin_temp
+*.zip

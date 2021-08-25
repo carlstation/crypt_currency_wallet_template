@@ -77,6 +77,11 @@ margin-left: 1em;
 
 $bottom_section_size: 400px;
 .dashboard-bottom-section{
+    .ads-card, .card-table{
+        display: flex;
+        flex-direction: column;
+        border-radius: $border-radius;
+    }
     // margin-bottom: 2em;
     .ads{
         display: flex;
@@ -89,7 +94,7 @@ $bottom_section_size: 400px;
             height: $bottom_section_size;
             width: $bottom_section_size;
             color: $cinza3;
-
+            
             .ads-content {
                 & .ads-img{
                     width: 100%;

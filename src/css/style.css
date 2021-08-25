@@ -26312,6 +26312,11 @@ table th {
 .addax-search :focus {
   border: 1px solid #8EA6C2; }
 
+.dashboard-bottom-section .ads-card, .dashboard-bottom-section .card-table {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem; }
+
 .dashboard-bottom-section .ads {
   display: flex;
   justify-content: center;
