@@ -298,8 +298,8 @@ function mobileChartView(x) {
 	  jQuery('mobile-nav').removeClass('hide');
 	  jQuery('.mobile-header').addClass('pb-0');
 	  jQuery('.mobile-action-menu').removeClass('hide');
-	  jQuery('#candlechartRow').removeClass('pb-2');
-	  jQuery('#candlechartRow').addClass('pb-4');
+	  // jQuery('#candlechartRow').removeClass('pb-2');
+	  // jQuery('#candlechartRow').addClass('pb-4');
 
 	} else {
 	  jQuery('mobile-nav').addClass('hide');
@@ -308,8 +308,8 @@ function mobileChartView(x) {
 	  jQuery('#tableRow').removeClass('hide');
 	  jQuery('#candlechartHeader').removeClass('hide');
 	  jQuery('.mobile-header').removeClass('pb-0');
-	  jQuery('#candlechartRow').addClass('pb-2');
-	  jQuery('#candlechartRow').removeClass('pb-4');
+	  // jQuery('#candlechartRow').addClass('pb-2');
+	  // jQuery('#candlechartRow').removeClass('pb-4');
 
 	}
 }
@@ -383,8 +383,17 @@ function mobileChartView(x) {
   jQuery(document).on('click', '.addax-header i.menu-toggle', function(){
     jQuery('.addax-mobile-menu').toggleClass('show');
     jQuery(this).toggleClass('open')
+  }); 
+  // dropdown addax
+  jQuery(document).on('click', '.addax-dropdown-menu', function(e){
+    e.preventDefault();
+    // var parent = jQuery(this).parents().find('.addax-tab-content .tab-pane').removeClass('active');
+    var parent = jQuery(this).parent().find('.dropdown-menu').toggleClass('show');
+    console.log('dropdown ' + parent);
+    // console.log( e.parentNode.id );
+    jQuery('.addax-dropdown-menu').toggleClass('shown');
   });
-
+  // dropdown end
   jQuery(document).on('hover', '.addax-mega-dropdown-toggle', function(){
     jQuery('.addax-mega-dropdown-menu-block').toggleClass('shown');
   });

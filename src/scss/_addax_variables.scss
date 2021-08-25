@@ -18,7 +18,16 @@ $vermelho : #D63031;
     $vermelho-l25: lighten($vermelho, 0.25);
 
 $amarelo: #fdd247;
-
+    $amarelo-d87: darken($amarelo, 0.87);
+    $amarelo-d75: darken($amarelo, 0.75);
+    $amarelo-d62: darken($amarelo, 0.62);
+    $amarelo-d50: darken($amarelo, 0.50);
+    $amarelo-d25: darken($amarelo, 0.25);
+    $amarelo-l87: lighten($amarelo, 0.87);
+    $amarelo-l75: lighten($amarelo, 0.75);
+    $amarelo-l62: lighten($amarelo, 0.62);
+    $amarelo-l50: lighten($amarelo, 0.50);
+    $amarelo-l25: lighten($amarelo, 0.25);
 // pallete color scheme
 $color1: #0B132B;
     $color1-d100: $preto; 
@@ -101,7 +110,7 @@ $theme-colors:(
 $addax_font: 'Jost', sans-serif;
 
 $dark-background-addax: $color1-d75;
-
+$addax-border-sm: 1px;
 $addax-input-border: 2px;
 
 

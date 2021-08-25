@@ -21,7 +21,7 @@
   <!-- Navbar -->
   <nav class="main-header full_header addax-header navbar navbar-expand navbar-dark navbar-cinza1 pt-1 pl-3 pr-3">
     <!-- Left navbar links -->
-    <ul class="navbar-nav col-md-2">
+    <ul class="navbar-nav col-md-2 nav-logo-menu">
       <li class="nav-item d-flex">
         <a class="nav-link margin-auto" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
@@ -41,8 +41,8 @@
     </ul>
 
      <!-- SEARCH FORM -->
-      <div class="col-md-5 addax-main-form d-md-block d-none a-center">
-        <form class="form-inline">
+      <div class="col-100 addax-main-form d-md-block d-none to-center">
+        <form class="form-inline addax_token_search_form">
           <div class="input-group input-group-sm">
             <input class="form-control addax-search" type="search" placeholder="Search" aria-label="Search">
             <div class="input-group-append search-icon">
@@ -243,62 +243,107 @@
 </mobile-nav>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper dashboard-wrapper-container pb-2 ">
+  <div class="content-wrapper dashboard-wrapper-container p-3">
         
     <div class="chart-container" id="candlechartRow">   
         <!-- /.row -->
        <!-- new row -->
-       <div class="row">
-          <!-- /.col-md-12 -->
-          <div class="card">
-
-            <div class="mt-3 mb-3 ui-sortable-handle" style="cursor: move;" id="candlechartHeader">
-              <!-- header -->
-              <div class="d-inline-flex">
-                <div class="summary-panel d-flex">
-                  <div class="token-image margin-auto">
-                    <img src="images/favicon.png" class="mr-3 img-circle elevation-2" alt="">
-                  </div>
-                  <div class="token">
-                    <h4 class="text-white">Addax</h4>
-                    <h4 class="m-0 text-white d-inline-flex">$0.939246 
-                      <span class="danger">-0.65%</span>
-                    </h4>
-                  </div>
-
+       <div class="row pl-2">
+        <!-- /.col-md-12 -->
+        <div class="mt-1 ui-sortable-handle col-lg-12" style="cursor: move;" id="candlechartHeader">
+          <!-- header -->
+          <div class="row candle-chart-header">
+            
+            <div class="candle-infos mb-3 mr-2">
+              <div class="summary-panel d-flex">
+                <div class="token-image margin-auto">
+                  <img src="images/favicon.png" class="mr-3 img-circle elevation-2" alt="">
+                </div>
+                <div class="token">
+                  <h5 class="text-white">Addax</h5>
+                  <h5 class="m-0 text-white d-inline-flex">$0.939246 
+                    <span class="danger">-0.65%</span>
+                  </h5>
                 </div>
   
-                <div class="summary-panel d-flex">
-                  
-                  <div class="token ml-5">
-                    <p class="mt-3 text-cinza2">24h Volume</p>
-                    <h5 class="m-0">$1.5392</h5>
-                  </div>
-                </div>
+              </div>
   
-                <div class="summary-panel d-flex">
-                  
-                  <div class="token ml-5">
-                    <p class="mt-3 text-cinza2">Liquidity</p>
-                    <h5 class="m-0">$-14.823%</h5>
-                  </div>
-                </div>
-
-                <div class="summary-panel d-flex">
-                  
-                  <div class="token ml-5">
-                    <p class="mt-3 text-cinza2">Marketcap</p>
-                    <h5 class="m-0">$-14.823</h5>
-                  </div>
+              <div class="summary-panel d-flex">
+                
+                <div class="token ml-3">
+                  <p class="text-cinza2">24h Volume</p>
+                  <h6 class="m-0">$1.5392</h6>
                 </div>
               </div>
-              <!-- header -->
-              
+  
+              <div class="summary-panel d-flex">
+                
+                <div class="token ml-3">
+                  <p class="text-cinza2">Liquidity</p>
+                  <h6 class="m-0">$-14.823%</h6>
+                </div>
+              </div>
+  
+              <div class="summary-panel d-flex">
+                
+                <div class="token ml-3">
+                  <p class="text-cinza2">Marketcap</p>
+                  <h6 class="m-0">$-14.823</h6>
+                </div>
+              </div>
             </div>
 
+            <div class="candle-buttons to-middle mb-3">
 
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-warning btn-addax addax-dropdown-menu" >
+                  <i class="fas fa-copy"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Menu 1</a>
+                  <a class="dropdown-item" href="#">Menu 2</a>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-primary btn-addax">
+                <i class="fas fa-exchange-alt mr-1"></i>Swap
+              </button>
+
+              <button type="button" class="btn btn-primary btn-addax">
+                <i class="fas fa-chart-bar mr-1"></i>Swap
+              </button>
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-addax addax-dropdown-menu" >
+                  PcSv2
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Lorem Link</a>
+                  <a class="dropdown-item" href="#">Ipsum Menu</a>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="mb-3 candle-buttons to-middle">
+              <button type="button" class="btn btn-default btn-addax rounded-pill btn-sm">
+                Single Blocks
+              </button>
+  
+              <button type="button" class="btn btn-default btn-addax rounded-pill btn-sm">
+                Plot Trades
+              </button>
+  
+              <button type="button" class="btn btn-success rounded-pill btn-sm">
+                <i class="fas fa-sync mr-1"></i>USD
+              </button>
+            </div>
+            
           </div>
-        <!-- /.col-md-12 -->
+          <!-- header -->
+          
+        </div>
+          <!-- /.col-md-12 -->
        </div>
        <!-- end row -->
        <!-- body inner start -->

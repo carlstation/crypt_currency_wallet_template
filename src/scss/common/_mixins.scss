@@ -32,11 +32,11 @@
 }
 
 @mixin redgradient(){
-    background: $vermelho-l87;
-    background: -moz-linear-gradient(90deg, $vermelho-d87 0%, $vermelho-l87 100%);
-    background: -webkit-linear-gradient(90deg, $vermelho-d87 0%, $vermelho-l87 100%);
-    background: linear-gradient(90deg, $vermelho-d87 0%, $vermelho-l87 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$vermelho-d87,endColorstr=$vermelho-l87,GradientType=1);
+    background: $vermelho-l25;
+    background: -moz-linear-gradient(90deg, $vermelho-d87 0%, $vermelho-l25 100%);
+    background: -webkit-linear-gradient(90deg, $vermelho-d87 0%, $vermelho-l25 100%);
+    background: linear-gradient(90deg, $vermelho-d87 0%, $vermelho-l25 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$vermelho-d87,endColorstr=$vermelho-l25,GradientType=1);
 }
 
 @mixin mainshadow(){

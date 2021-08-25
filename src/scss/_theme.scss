@@ -141,9 +141,20 @@ mobile-nav{
         }
     }
 }
+.candle-chart-header{
+    & .candle-infos{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .candle-buttons{
+    
+    }
+}
 .chart-container{
-    flex-grow: 1;
     display: flex;
+    flex: 0 1 600px;
+    flex-grow: 1;
     flex-direction: column;
 }
 .margin-wrapper {
@@ -191,10 +202,14 @@ footer.mobile-action-menu {
     flex-direction: column;
     & p{
         margin-bottom: 0.05rem;
-        margin-top: 0.55rem;
+        margin-top: 0.46rem;
+        font-size: 0.8em;
     }
 }
 .token {
+    & h4, h5, h6 {
+        margin-bottom: 0!important;
+    }
     & span {
         font-size: 0.6em;
         margin-top: auto;
@@ -226,7 +241,7 @@ border-bottom: 1px solid $cinza !important;
     height: fit-content;
 
     & img{
-    width: 3.2rem;
+    width: 3rem;
     }
 }
 .identity .avatar{
@@ -356,7 +371,7 @@ body.addax-dark .input-group-text{
 }
 body.addax-dark .form-control  {
     color: $branco;
-    background-color: $cinza1;
+    background-color: rgba($primary, 0.15);
     background-clip: padding-box;
     border-radius: 0.35rem!important;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -423,6 +438,15 @@ g[opacity="0.4"]{
     margin-right: auto;
     margin-left: auto;
 }
+.nav-logo-menu{
+    flex-grow: 1;
+    display: flex;
+}
+.addax_token_search_form {
+    margin-left: auto;  
+    margin-right: auto;
+    max-width: 60%;
+}
 /*--- colors ----*/
 .addax-yellow{
     color: $amarelo;
@@ -484,6 +508,53 @@ g[opacity="0.4"]{
      -o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); 
         transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* easeInOutExpo */
 }
+
+// addax buttons theme
+$fontcolor_addax: rgba(white, 0.8);
+
+.btn-default.btn-addax {
+    background: rgba($cinza, 0.3)!important;
+    border: $addax-border-sm solid $cinza!important;
+    color: $fontcolor_addax!important;
+    & :hover {
+    background: rgba($cinza, 0.45)!important;
+    color: white!important;
+    }
+}
+.btn-primary.btn-addax {
+    background: rgba($primary, 0.3)!important;
+    border: $addax-border-sm solid $primary!important;
+    color: $fontcolor_addax!important;
+    & :hover {
+        background: rgba($cinza, 0.45)!important;
+        color: white!important;
+    }
+}
+.btn-warning.btn-addax {
+    background: rgba($amarelo-d50, 0.3)!important;
+    border: $addax-border-sm solid $amarelo-d50!important;
+    color: $fontcolor_addax!important;
+    & :hover {
+        background: rgba($cinza, 0.45)!important;
+        color: white!important;
+    }
+}
+
+.addax-dropdown-menu {
+    white-space: nowrap; }
+    .addax-dropdown-menu::after {
+      display: inline-block;
+      margin-left: 0.255em;
+      vertical-align: 0.255em;
+      content: "";
+      border-top: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-bottom: 0;
+      border-left: 0.3em solid transparent; }
+    .addax-dropdown-menu:empty::after {
+      margin-left: 0; 
+    }
+
 .addax-btn:hover > i{
     padding-left: 7px;
 }
@@ -656,7 +727,11 @@ body.addax-dark .addax-boxed-area{
 .col-100{
     width:100%;
 }
-.a-center{
+.to-center{
     margin-right: auto;
     margin-left: auto;
+}
+.to-middle{
+    margin-top: auto;
+    margin-bottom: auto;
 }
