@@ -298,16 +298,18 @@ function mobileChartView(x) {
 	  jQuery('mobile-nav').removeClass('hide');
 	  jQuery('.mobile-header').addClass('pb-0');
 	  jQuery('.mobile-action-menu').removeClass('hide');
+	  jQuery('body').addClass('layout-fixed');
 	  // jQuery('#candlechartRow').removeClass('pb-2');
 	  // jQuery('#candlechartRow').addClass('pb-4');
 
 	} else {
-	  jQuery('mobile-nav').addClass('hide');
+    jQuery('mobile-nav').addClass('hide');
 	  jQuery('.mobile-action-menu').addClass('hide');
 	  jQuery('#tableRow').addClass('pt-1');
 	  jQuery('#tableRow').removeClass('hide');
 	  jQuery('#candlechartHeader').removeClass('hide');
 	  jQuery('.mobile-header').removeClass('pb-0');
+	  jQuery('body').removeClass('layout-fixed');
 	  // jQuery('#candlechartRow').addClass('pb-2');
 	  // jQuery('#candlechartRow').removeClass('pb-4');
 
