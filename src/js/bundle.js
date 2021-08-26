@@ -314,7 +314,8 @@ function mobileChartView(x) {
 	}
 }
   
-  var x = window.matchMedia("(max-width: 414px)")
+var x = window.matchMedia("(max-width: 640px)")
+
   mobileChartView(x) // Call listener function at run time
   x.addListener(mobileChartView) // Attach listener function on state changes
 

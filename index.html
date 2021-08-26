@@ -11,7 +11,7 @@
 	<link href="src/css/style.css" rel="stylesheet">
 
 </head>
-<body class="slideshows hold-transition sidebar-mini addax-dark">
+<body class="slideshows hold-transition sidebar-mini addax-dark layout-fixed">
   
   <!-- Preloader Start -->
   <div id="preloader">
@@ -56,7 +56,7 @@
       </div>
 
     <!-- Right navbar links -->
-    <ul class="navbar-nav col-auto">
+    <ul class="navbar-nav col-auto row">
      
       <li class="nav-item swap col-auto">
         <div class="swap">
@@ -67,7 +67,7 @@
       </li>
 
 
-      <li class="nav-item d-none d-sm-inline-block col-auto">
+      <li class="nav-item d-none d-sm-inline-block ml-2">
         <a class="nav-link btn btn-primary" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="pe-7s-wallet"></i> Connect Wallet
         </a>
@@ -79,8 +79,8 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-
-<div class="wrapper">
+  
+  <div class="wrapper">
 
 
   <!-- Main Sidebar Container -->
@@ -213,9 +213,14 @@
 
     
 
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper dashboard-wrapper-container pt-3 pl-3 pr-3">
+        
+
 <mobile-nav>
 
-  <div class="mobile-header">
+  <div class="mobile-header pl-3 pr-3 pt-0 pb-3">
     <div class="image mr-3 d-flex">
       <img src="./images/favicon.png" class="img-circle to-middle" alt="">
     </div>
@@ -242,9 +247,7 @@
 
 </mobile-nav>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper dashboard-wrapper-container p-3">
-        
+
     <div class="chart-container" id="candlechartRow">   
         <!-- /.row -->
        <!-- new row -->
@@ -358,7 +361,7 @@
     <!-- new row -->
    <div class="row dashboard-bottom-section " id="tableRow">
       <div class="col-auto transaction-table">
-        <div class="card-table">
+        <div class="card-table mb-3">
 
 
           <ul class="nav nav-pills p-2">
@@ -449,7 +452,7 @@
         </div>
       </div>
 
-      <div class="col-auto margin-auto">
+      <div class="col-auto mb-3 to-center">
         <!-- promo ads section -->
         <div class="ads">
           <div class="ads-card">
@@ -574,7 +577,7 @@
   <!-- ================================================= -->
 
 
-<footer class="mobile-action-menu">
+<footer class="mobile-action-menu main-footer">
     <ul>
       <li id="chartToggle">Chart</li>
       <li id="tradeToggle">Trades</li>
@@ -582,7 +585,6 @@
       <li id="trendToggle">Trending</li>
     </ul>
 </footer>
-
 
 </div>
 <!-- ./wrapper -->
