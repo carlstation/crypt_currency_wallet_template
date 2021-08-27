@@ -11,13 +11,13 @@
 }
 @media only screen and (max-width: 414px) {
   #addax-candle-chart {
-    max-height: 77vh;
+    // max-height: 77vh;
   }
 }
 #addax-candle-chart {
   height: auto;
   flex-grow: 1;
-  min-height: 50vh;
+  // min-height: 50vh;
 
 
   & > div > div{

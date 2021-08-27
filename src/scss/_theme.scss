@@ -158,7 +158,7 @@ mobile-nav{
 }
 .chart-container{
     display: flex;
-    flex: 0 1 600px;
+    flex: 0 1 calc(68vh - 70px);
     flex-grow: 1;
     flex-direction: column;
 }
@@ -658,11 +658,11 @@ body.addax-dark .addax-boxed-area{
     background: #ca3a28;
 }
 .addax-header{
-    position: fixed;
+    position: fixed!important;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 1039!important;
     height: 70px;
 }
 .full_header, .sidebar-mini.sidebar-collapse .main-header.full_header {

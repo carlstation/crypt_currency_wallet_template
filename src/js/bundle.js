@@ -298,7 +298,7 @@ function mobileChartView(x) {
 	  jQuery('mobile-nav').removeClass('hide');
 	  jQuery('.mobile-header').addClass('pb-0');
 	  jQuery('.mobile-action-menu').removeClass('hide');
-	  jQuery('body').addClass('layout-fixed');
+	  // jQuery('body').addClass('layout-fixed');
 	  // jQuery('#candlechartRow').removeClass('pb-2');
 	  // jQuery('#candlechartRow').addClass('pb-4');
 
@@ -309,14 +309,14 @@ function mobileChartView(x) {
 	  jQuery('#tableRow').removeClass('hide');
 	  jQuery('#candlechartHeader').removeClass('hide');
 	  jQuery('.mobile-header').removeClass('pb-0');
-	  jQuery('body').removeClass('layout-fixed');
+	  // jQuery('body').removeClass('layout-fixed');
 	  // jQuery('#candlechartRow').addClass('pb-2');
 	  // jQuery('#candlechartRow').removeClass('pb-4');
 
 	}
 }
   
-var x = window.matchMedia("(max-width: 640px)")
+var x = window.matchMedia("(max-width: 800px)")
 
   mobileChartView(x) // Call listener function at run time
   x.addListener(mobileChartView) // Attach listener function on state changes

@@ -454,7 +454,7 @@ mobile-nav {
 
 .chart-container {
   display: flex;
-  flex: 0 1 600px;
+  flex: 0 1 calc(68vh - 70px);
   flex-grow: 1;
   flex-direction: column; }
 
@@ -918,11 +918,11 @@ body.addax-dark .addax-boxed-area {
   background: #ca3a28; }
 
 .addax-header {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 1039 !important;
   height: 70px; }
 
 .full_header, .sidebar-mini.sidebar-collapse .main-header.full_header {
@@ -1002,6 +1002,10 @@ body.addax-dark .addax-boxed-area {
 .to-middle {
   margin-top: auto;
   margin-bottom: auto; }
+
+@media only screen and (max-width: 1024px) {
+  .dashboard-bottom-section .ads .ads-card {
+    width: 300px !important; } }
 
 @media only screen and (max-width: 995px) {
   .margin-wrapper {
@@ -26320,44 +26324,51 @@ table th {
 .addax-search :focus {
   border: 1px solid #8EA6C2; }
 
-.dashboard-bottom-section .ads-card, .dashboard-bottom-section .card-table {
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.25rem; }
+@media only screen and (min-width: 1024px) and (min-height: 900px) {
+  .dashboard-bottom-section {
+    flex: 1 0 22vh; } }
 
-.dashboard-bottom-section .ads {
-  display: flex;
-  justify-content: center;
-  vertical-align: middle; }
-  .dashboard-bottom-section .ads .ads-card {
-    position: relative;
+.dashboard-wrapper-container {
+  margin-top: 70px; }
+
+.dashboard-bottom-section {
+  flex-wrap: nowrap;
+  flex: 1 0 calc(32vh - 70px); }
+  .dashboard-bottom-section .ads, .dashboard-bottom-section .card-table {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem; }
+  .dashboard-bottom-section .ads {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    height: 100%;
+    background: #1D2835;
+    border: 1px solid #2B3B50; }
+    .dashboard-bottom-section .ads .ads-card {
+      position: relative;
+      width: 400px;
+      color: white; }
+      .dashboard-bottom-section .ads .ads-card .ads-content .ads-img {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .dashboard-bottom-section .ads .ads-card .ads-button {
+        text-align: center;
+        color: #8EA6C2;
+        background: #1D2835;
+        font-size: 1rem;
+        width: 100%;
+        bottom: 0;
+        padding: 1em;
+        position: absolute; }
+  .dashboard-bottom-section .card-table {
     background: #1D2835;
     border: 1px solid #2B3B50;
-    height: 400px;
-    width: 400px;
-    color: white; }
-    .dashboard-bottom-section .ads .ads-card .ads-content .ads-img {
-      width: 100%;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .dashboard-bottom-section .ads .ads-card .ads-button {
-      text-align: center;
-      color: #8EA6C2;
-      background: #1D2835;
-      font-size: 1rem;
-      width: 100%;
-      bottom: 0;
-      padding: 1em;
-      position: absolute; }
-
-.dashboard-bottom-section .card-table {
-  background: #1D2835;
-  border: 1px solid #2B3B50;
-  min-height: 400px; }
-
-.dashboard-bottom-section .transaction-table {
-  flex-grow: 1; }
+    height: 100%; }
+  .dashboard-bottom-section .transaction-table {
+    flex-grow: 1; }
 
 .fwrap {
   flex-wrap: wrap; }
@@ -26619,14 +26630,9 @@ row.md-gutter [class*='col-'] {
   flex-grow: 1;
   display: flex; }
 
-@media only screen and (max-width: 414px) {
-  #addax-candle-chart {
-    max-height: 77vh; } }
-
 #addax-candle-chart {
   height: auto;
-  flex-grow: 1;
-  min-height: 50vh; }
+  flex-grow: 1; }
   #addax-candle-chart > div > div {
     width: 100%; }
 
@@ -27477,6 +27483,9 @@ body {
 
 [class^="pe-7s-"], [class*=" pe-7s-"] {
   display: inline-block; }
+
+.mt-8 {
+  margin-top: 5.8em; }
 
 .margin-auto {
   margin: auto !important; }

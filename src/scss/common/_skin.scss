@@ -79,8 +79,19 @@ margin-left: 1em;
 }
 
 $bottom_section_size: 400px;
+
+@media only screen and (min-width: 1024px) and (min-height: 900px){
+    .dashboard-bottom-section {
+        flex: 1 0 22vh;
+    }
+}
+.dashboard-wrapper-container{
+    margin-top: 70px;
+}
 .dashboard-bottom-section{
-    .ads-card, .card-table{
+    flex-wrap: nowrap;
+    flex: 1 0 calc(32vh - 70px);
+    .ads, .card-table{
         display: flex;
         flex-direction: column;
         border-radius: $border-radius;
@@ -90,11 +101,12 @@ $bottom_section_size: 400px;
         display: flex;
         justify-content: center;
         vertical-align: middle;
+        height: 100%;
+        background: $color3-d50;
+        border: 1px solid $color3-d25;
         .ads-card {
             position:relative;
-            background: $color3-d50;
-            border: 1px solid $color3-d25;
-            height: $bottom_section_size;
+            // height: $bottom_section_size;
             width: $bottom_section_size;
             color: $cinza3;
             
@@ -123,7 +135,8 @@ $bottom_section_size: 400px;
     & .card-table {
         background: $color3-d50;
         border: 1px solid $color3-d25;
-        min-height: $bottom_section_size;
+        // min-height: $bottom_section_size;
+        height: 100%
     }
 
     & .transaction-table {
