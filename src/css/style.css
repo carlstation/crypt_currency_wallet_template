@@ -452,6 +452,9 @@ mobile-nav {
   .chart-container {
     flex: 1 !important; } }
 
+.wrapper-inner-content {
+  height: -webkit-fill-available; }
+
 .chart-container {
   display: flex;
   flex: 0 1 calc(68vh - 70px);
@@ -474,6 +477,41 @@ mobile-nav {
     width: 100%;
     bottom: -100%;
     opacity: 0; }
+
+.candle-chart-header {
+  display: flex;
+  flex-wrap: wrap; }
+
+.table-transaction-container {
+  position: sticky;
+  top: 10px; }
+
+.mobile-progress-header {
+  position: sticky;
+  margin-top: -15px;
+  margin-bottom: 1rem; }
+
+.trade_pane > .progress {
+  position: sticky;
+  top: 10px;
+  z-index: 4; }
+
+.trade_pane .tableFixHead {
+  overflow-y: auto;
+  height: calc(32vh - 150px);
+  margin-top: 10px; }
+
+.trade_pane .tableFixHead thead tr {
+  position: sticky;
+  top: 0;
+  background: #1D2835;
+  /* secondary/very-dark */
+  /* out/big shadow */
+  box-shadow: -2px -2px 8px rgba(72, 80, 99, 0.15), 2px 2px 12px rgba(0, 0, 0, 0.22); }
+
+.trade_pane table {
+  border-collapse: collapse;
+  width: 100%; }
 
 footer.mobile-action-menu {
   position: fixed;
@@ -1003,6 +1041,36 @@ body.addax-dark .addax-boxed-area {
   margin-top: auto;
   margin-bottom: auto; }
 
+@media only screen and (min-width: 1024px) and (min-height: 900px) {
+  .dashboard-bottom-section {
+    flex: 1 0 22vh; } }
+
+@media only screen and (max-height: 992px) {
+  .dashboard-bottom-section {
+    flex: 400px !important; }
+  .tableFixHead {
+    height: 28vh !important; }
+  .trade_pane .tableFixHead thead tr {
+    position: relative; }
+  .trade_pane > .progress {
+    display: none !important; } }
+
+@media only screen and (max-height: 834px) {
+  .dashboard-bottom-section {
+    flex: 330px !important; }
+  .tableFixHead {
+    height: 24vh !important; } }
+
+@media only screen and (max-height: 768px) {
+  .dashboard-bottom-section {
+    flex: 330px !important; }
+  .tableFixHead {
+    height: 25vh; } }
+
+@media only screen and (max-width: 1280px) {
+  .dashboard-bottom-section .ads .ads-card {
+    width: 330px !important; } }
+
 @media only screen and (max-width: 1024px) {
   .dashboard-bottom-section .ads .ads-card {
     width: 300px !important; } }
@@ -1013,11 +1081,22 @@ body.addax-dark .addax-boxed-area {
 
 @media only screen and (max-width: 991px) {
   .margin-wrapper {
-    margin-left: 0 !important; } }
+    margin-left: 0 !important; }
+  .dashboard-wrapper-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important; }
+  .chart-container {
+    flex: 1 !important; }
+  .ads-body {
+    display: none !important; } }
 
 @media only screen and (max-width: 414px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
     padding-bottom: 3em; }
+  .tableFixHead {
+    height: 57vh !important; }
   .swap {
     margin-right: 0; }
   thead th:not(:first-child) {
@@ -26324,14 +26403,14 @@ table th {
 .addax-search :focus {
   border: 1px solid #8EA6C2; }
 
-@media only screen and (min-width: 1024px) and (min-height: 900px) {
-  .dashboard-bottom-section {
-    flex: 1 0 22vh; } }
-
-.dashboard-wrapper-container {
+.content-clearfix {
   margin-top: 70px; }
 
+.dashboard-wrapper-container {
+  padding: 1rem; }
+
 .dashboard-bottom-section {
+  display: inline-flex;
   flex-wrap: nowrap;
   flex: 1 0 calc(32vh - 70px); }
   .dashboard-bottom-section .ads, .dashboard-bottom-section .card-table {
@@ -26347,6 +26426,8 @@ table th {
     border: 1px solid #2B3B50; }
     .dashboard-bottom-section .ads .ads-card {
       position: relative;
+      height: 100%;
+      display: flex;
       width: 400px;
       color: white; }
       .dashboard-bottom-section .ads .ads-card .ads-content .ads-img {

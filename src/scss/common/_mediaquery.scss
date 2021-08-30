@@ -1,4 +1,50 @@
 
+@media only screen and (min-width: 1024px) and (min-height: 900px){
+    .dashboard-bottom-section {
+        flex: 1 0 22vh;
+    }
+}
+@media only screen and (max-height: 992px){
+    .dashboard-bottom-section{
+        flex: 400px !important;
+    }
+    .tableFixHead {
+        height: 28vh!important;
+    }
+    .trade_pane .tableFixHead thead tr{
+        position:relative;
+    }
+    .trade_pane > .progress {
+        display: none!important; 
+    }
+}
+@media only screen and (max-height: 834px){
+    .dashboard-bottom-section{
+        flex: 330px !important;
+    }
+    .tableFixHead {
+        height: 24vh!important;
+    }
+}
+@media only screen and (max-height: 768px){
+    .dashboard-bottom-section{
+        flex: 330px !important;
+    }
+    .tableFixHead {
+        height: 25vh;
+    }
+}
+
+
+@media only screen and (max-width: 1280px){
+    .dashboard-bottom-section{
+        .ads{
+            .ads-card {
+             width: 330px!important;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1024px){
     .dashboard-bottom-section{
         .ads{
@@ -19,11 +65,26 @@
     .margin-wrapper {
         margin-left: 0!important;
     }
+    .dashboard-wrapper-container{
+        padding-left: 0!important;
+        padding-right: 0!important;
+        padding-top: 1rem!important;
+        padding-bottom: 2rem!important;
+    }
+    .chart-container{
+        flex: 1!important;
+    }
+    .ads-body{
+        display: none!important;
+    }
 }
 
 @media only screen and (max-width: 414px) {
     .container-fluid{
         padding-bottom: 3em;
+    }
+    .tableFixHead {
+        height: 57vh !important;
     }
     .swap{
         margin-right: 0;

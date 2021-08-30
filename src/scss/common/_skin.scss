@@ -80,15 +80,18 @@ margin-left: 1em;
 
 $bottom_section_size: 400px;
 
-@media only screen and (min-width: 1024px) and (min-height: 900px){
-    .dashboard-bottom-section {
-        flex: 1 0 22vh;
-    }
-}
-.dashboard-wrapper-container{
+
+
+.content-clearfix{
+    // padding-top: calc(70px + 1rem);
     margin-top: 70px;
 }
+.dashboard-wrapper-container{
+    // margin-top: calc(70px + 1rem);
+    padding: 1rem;
+}
 .dashboard-bottom-section{
+    display: inline-flex;
     flex-wrap: nowrap;
     flex: 1 0 calc(32vh - 70px);
     .ads, .card-table{
@@ -107,6 +110,8 @@ $bottom_section_size: 400px;
         .ads-card {
             position:relative;
             // height: $bottom_section_size;
+            height: 100%;
+            display: flex;
             width: $bottom_section_size;
             color: $cinza3;
             

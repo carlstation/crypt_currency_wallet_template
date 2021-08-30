@@ -80,8 +80,7 @@
       </ul>
     </nav>
     <!-- /.navbar -->
-  <div class="wrapper">
-
+<div class="wrapper">
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -211,51 +210,61 @@
     <!-- /.sidebar -->
   </aside>
 
-    
 
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper content-fixed dashboard-wrapper-container pt-3 pl-3 pr-3">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper content-fixed content-clearfix">
         
+<div class="d-flex wrapper-inner-content">
+  <div class="dashboard-wrapper-container">
+  
+    <mobile-nav>
 
-<mobile-nav>
-
-  <div class="mobile-header pl-3 pr-3 pt-0 pb-3">
-    <div class="image mr-3 d-flex">
-      <img src="./images/favicon.png" class="img-circle to-middle" alt="">
-    </div>
-    <div class="identity">
-      <p>Token</p>
-      <h5 class="m-0 text-white">$0.0325752
-        <span>15.18%</span>
-      </h5>
-    </div>
-
-    <div class="btn-dropdown-mobile-toggle dropleft to-middle">
-      <button type="button" class="btn btn-default">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-      <div class="mobile-dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
+      <div class="progress mobile-progress-header">
+        <div class="progress-bar pbar-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+        </div>
+        <div class="progress-bar pbar-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+          
+        </div>
+        <div class="progress-bar pbar-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+        </div>
       </div>
-    </div>
-  </div>
 
-</mobile-nav>
-
-
+      <div class="mobile-header pl-3 pr-3 pt-0 pb-3">
+        <div class="image mr-3 d-flex">
+          <img src="./images/favicon.png" class="img-circle to-middle" alt="">
+        </div>
+        <div class="identity">
+          <p>Token</p>
+          <h5 class="m-0 text-white">$0.0325752
+            <span>15.18%</span>
+          </h5>
+        </div>
+    
+        <div class="btn-dropdown-mobile-toggle dropleft to-middle">
+          <button type="button" class="btn btn-default">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="mobile-dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+    
+    </mobile-nav>
+    
+    
     <div class="chart-container" id="candlechartRow">   
         <!-- /.row -->
-       <!-- new row -->
-       <div class="row pl-2">
+        <!-- new row -->
+        <div class="row pl-2">
         <!-- /.col-md-12 -->
         <div class="mt-1 ui-sortable-handle col-lg-12" style="cursor: move;" id="candlechartHeader">
           <!-- header -->
-          <div class="row candle-chart-header">
+          <div class="candle-chart-header">
             
             <div class="candle-infos mb-3 mr-2">
               <div class="summary-panel d-flex">
@@ -268,9 +277,9 @@
                     <span class="danger">-0.65%</span>
                   </h5>
                 </div>
-  
+    
               </div>
-  
+    
               <div class="summary-panel d-flex">
                 
                 <div class="token ml-3">
@@ -278,7 +287,7 @@
                   <h6 class="m-0">$1.5392</h6>
                 </div>
               </div>
-  
+    
               <div class="summary-panel d-flex">
                 
                 <div class="token ml-3">
@@ -286,7 +295,7 @@
                   <h6 class="m-0">$-14.823%</h6>
                 </div>
               </div>
-  
+    
               <div class="summary-panel d-flex">
                 
                 <div class="token ml-3">
@@ -295,9 +304,9 @@
                 </div>
               </div>
             </div>
-
+    
             <div class="candle-buttons to-middle mb-3">
-
+    
               <div class="btn-group" role="group">
                 <button type="button" class="btn btn-warning btn-addax addax-dropdown-menu" >
                   <i class="fas fa-copy"></i>
@@ -307,15 +316,15 @@
                   <a class="dropdown-item" href="#">Menu 2</a>
                 </div>
               </div>
-
+    
               <button type="button" class="btn btn-primary btn-addax">
                 <i class="fas fa-exchange-alt mr-1"></i>Swap
               </button>
-
+    
               <button type="button" class="btn btn-primary btn-addax">
                 <i class="fas fa-chart-bar mr-1"></i>Swap
               </button>
-
+    
               <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default btn-addax addax-dropdown-menu" >
                   PcSv2
@@ -329,11 +338,11 @@
               <button type="button" class="btn btn-default btn-addax rounded-pill btn-sm">
                 Single Blocks
               </button>
-  
+    
               <button type="button" class="btn btn-default btn-addax rounded-pill btn-sm">
                 Plot Trades
               </button>
-  
+    
               <button type="button" class="btn btn-success rounded-pill btn-sm">
                 <i class="fas fa-sync mr-1"></i>USD
               </button>
@@ -344,23 +353,23 @@
           
         </div>
           <!-- /.col-md-12 -->
-       </div>
-       <!-- end row -->
-       <!-- body inner start -->
+        </div>
+        <!-- end row -->
+        <!-- body inner start -->
       <div class="tradingview-widget-container mb-3">
         <div id="addax-candle-chart"></div>
       </div>
         <!-- body inner end -->
         <!-- /.row -->
     </div>    
-
-
+    
+    
     <!-- new row -->
-   <div class="row dashboard-bottom-section " id="tableRow">
-      <div class="transaction-table d-fex pb-3">
-        <div class="col-lg-12 card-table mb-3">
-
-
+    <div class="dashboard-bottom-section " id="tableRow">
+      <div class="transaction-table d-fex">
+        
+        <div class="col-lg-12 card-table">
+        
           <ul class="nav nav-pills p-2">
             <li class="nav-item">
               <a class="nav-link active" id="trade-tab" data-toggle="tab" href="#trade" role="tab" aria-controls="trade" aria-selected="true">Trades</a>
@@ -379,11 +388,11 @@
             </li>
             
           </ul>
-
+    
           <!-- content nav -->
           <div class="tab-content">
-            <div class="tab-pane fade show active" id="trade" role="tabpanel" aria-labelledby="trade-tab">
-
+            <div class="tab-pane trade_pane fade show active" id="trade" role="tabpanel" aria-labelledby="trade-tab">
+    
               <div class="progress">
                 <div class="progress-bar pbar-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -393,9 +402,9 @@
                 <div class="progress-bar pbar-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-
-              <div class="col-lg-12">
-            <table class="table table-striped table-hover table-dark">
+    
+            <div class="col-lg-12 tableFixHead">
+            <table class="table table-striped table-hover table-dark fixed_header">
             <thead>
               <tr class="success">
                 <td>Time</td>
@@ -427,6 +436,20 @@
                 <td>$256.018 <span>USD</span></td>
                 <td>PcSv2</td>
               </tr>
+              <tr class="success">
+                <td><i class="fas fa-sort-up"></i> 1m ago</td>
+                <td>285.207 <span>BOG</span></td>
+                <td>0.893 <span>USD</span></td>
+                <td>$256.018 <span>USD</span></td>
+                <td>PcSv2</td>
+              </tr>
+              <tr class="success">
+                <td><i class="fas fa-sort-up"></i> 1m ago</td>
+                <td>285.207 <span>BOG</span></td>
+                <td>0.893 <span>USD</span></td>
+                <td>$256.018 <span>USD</span></td>
+                <td>PcSv2</td>
+              </tr>
             </tbody>
             </table>
           </div>
@@ -445,20 +468,20 @@
             </div>
           </div>
           <!-- content nav -->
-
+    
         </div>
       </div>
-
-      <div class="col-auto mb-3 to-center">
+    
+      <div class="pl-3 ads-body">
         <!-- promo ads section -->
         <div class="ads">
           <div class="ads-card">
             <div class="ads-content margin-auto">
-
-
+    
+    
               <!-- <img class="ads-img" src="url..." > -->
             No Contents Avaliable
-
+    
                 
             </div>
             <div class="ads-button">
@@ -470,108 +493,111 @@
       </div>
     </div>
     <!-- end row -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- ================================================= -->
-  <!-- ================================================= -->
-  <!-- ================================================= -->
- 
-  <!-- ================================================= -->
-  <!-- ================================================= -->
-  <!-- ================================================= -->
-
-  <div class="row hide" id="tokenRow">
-    <div class="col-lg-12">
-      <div class="card">
-        <div class="card-header c-line">
-          <ul class="nav nav-pills" id="tokenInfo" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="info-tab" data-toggle="tab" href="#token-info" role="tab" aria-controls="token-info" aria-selected="true">token-info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="liquify-tab" data-toggle="tab" href="#liquify" role="tab" aria-controls="liquify" aria-selected="false">liquify</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="tab-content" id="tokenInfoContent">
-            <div class="tab-pane fade show active" id="token-info" role="tabpanel" aria-labelledby="info-tab">
-              <div class="info-header">
-                <h4>Token Info</h4>
-              </div>
-              <div class="col-12 token-info-body">
-                <p>The new BOG token, powering BogTools and <strong>Finance</strong>.</p>
-                <p>The new BOG token, powering <strong>addax</strong> and Bogged.Finance.</p>
-                <p>The new BOG token, powering BogTools and Bogged.Finance.</p>
-              </div>
-              <div class="col-12 token-info-links">
-                <div class="info-link">
-                  <a href="#">
-                    <i class="fab fa-instagram"></i>
-                    <p>Instagram</p>
-                  </a>
+    <!-- /.content-wrapper -->
+    
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    
+    <div class="row hide" id="tokenRow">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header c-line">
+            <ul class="nav nav-pills" id="tokenInfo" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="info-tab" data-toggle="tab" href="#token-info" role="tab" aria-controls="token-info" aria-selected="true">token-info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="liquify-tab" data-toggle="tab" href="#liquify" role="tab" aria-controls="liquify" aria-selected="false">liquify</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content" id="tokenInfoContent">
+              <div class="tab-pane fade show active" id="token-info" role="tabpanel" aria-labelledby="info-tab">
+                <div class="info-header">
+                  <h4>Token Info</h4>
                 </div>
-                <div class="info-link">
-                  <a href="#">
-                    <i class="fab fa-facebook"></i>
-                    <p>Facebook</p>
-                  </a>
+                <div class="col-12 token-info-body">
+                  <p>The new BOG token, powering BogTools and <strong>Finance</strong>.</p>
+                  <p>The new BOG token, powering <strong>addax</strong> and Bogged.Finance.</p>
+                  <p>The new BOG token, powering BogTools and Bogged.Finance.</p>
                 </div>
+                <div class="col-12 token-info-links">
+                  <div class="info-link">
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                      <p>Instagram</p>
+                    </a>
+                  </div>
+                  <div class="info-link">
+                    <a href="#">
+                      <i class="fab fa-facebook"></i>
+                      <p>Facebook</p>
+                    </a>
+                  </div>
+                </div>
+    
               </div>
-
-            </div>
-            <div class="tab-pane fade" id="liquify" role="tabpanel" aria-labelledby="liquify-tab">
-              <!-- info block -->
-              <div class="info-header">
-                <h5>BNB LP PancakeSwap V1</h5>
+              <div class="tab-pane fade" id="liquify" role="tabpanel" aria-labelledby="liquify-tab">
+                <!-- info block -->
+                <div class="info-header">
+                  <h5>BNB LP PancakeSwap V1</h5>
+                </div>
+                <div class="col-12 token-info-body">
+                  <p><span class="success">One LP is worth $36.737</span></p>
+                  <p>20.347 BOG + 0.055 BNB</p>
+                  <h5 class="mt-4">Liquidity Pool Totals</h5>
+                  <p>Pool adds $376.660 to total liquidity</p>
+                  <p>BOG pooled: 208.614</p>
+                  <p>BNB pooled: 0.563</p>
+                  <p>Total LP Tokens: 10.253</p>
+                  <!-- line -->
+                  <div class="c-line mt-5 mb-5"></div>
+                  <!-- line -->
+                </div>
+                <!-- info block end -->
+                <!-- info block -->
+                <div class="info-header">
+                  <h5>BNB LP PancakeSwap V2</h5>
+                </div>
+                <div class="col-12 token-info-body">
+                  <p><span class="success">One LP is worth $36.737</span></p>
+                  <p>20.347 BOG + 0.055 BNB</p>
+                  <h5 class="mt-4">Liquidity Pool Totals</h5>
+                  <p>Pool adds $376.660 to total liquidity</p>
+                  <p>BOG pooled: 208.614</p>
+                  <p>BNB pooled: 0.563</p>
+                  <p>Total LP Tokens: 10.253</p>
+                </div>
+                <!-- info block end -->
+                
               </div>
-              <div class="col-12 token-info-body">
-                <p><span class="success">One LP is worth $36.737</span></p>
-                <p>20.347 BOG + 0.055 BNB</p>
-                <h5 class="mt-4">Liquidity Pool Totals</h5>
-                <p>Pool adds $376.660 to total liquidity</p>
-                <p>BOG pooled: 208.614</p>
-                <p>BNB pooled: 0.563</p>
-                <p>Total LP Tokens: 10.253</p>
-                <!-- line -->
-                <div class="c-line mt-5 mb-5"></div>
-                <!-- line -->
-              </div>
-              <!-- info block end -->
-              <!-- info block -->
-              <div class="info-header">
-                <h5>BNB LP PancakeSwap V2</h5>
-              </div>
-              <div class="col-12 token-info-body">
-                <p><span class="success">One LP is worth $36.737</span></p>
-                <p>20.347 BOG + 0.055 BNB</p>
-                <h5 class="mt-4">Liquidity Pool Totals</h5>
-                <p>Pool adds $376.660 to total liquidity</p>
-                <p>BOG pooled: 208.614</p>
-                <p>BNB pooled: 0.563</p>
-                <p>Total LP Tokens: 10.253</p>
-              </div>
-              <!-- info block end -->
-              
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    
+    <div class="row hide" id="trendRow">
+    
+    </div>
+    
+    <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- ================================================= -->
   </div>
+</div>
 
-  <!-- ================================================= -->
-  <!-- ================================================= -->
-  <!-- ================================================= -->
-  
-  <div class="row hide" id="trendRow">
-
-  </div>
-  
-  <!-- ================================================= -->
-  <!-- ================================================= -->
-  <!-- ================================================= -->
+</div>
 
 
 <footer class="mobile-action-menu main-footer">

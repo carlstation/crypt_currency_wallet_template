@@ -156,11 +156,15 @@ mobile-nav{
         flex: 1 !important;
     }
 }
+.wrapper-inner-content{
+    height: -webkit-fill-available;
+}
 .chart-container{
     display: flex;
     flex: 0 1 calc(68vh - 70px);
     flex-grow: 1;
     flex-direction: column;
+    // padding-top: calc(70px + 1rem);
 }
 .margin-wrapper {
     margin-left: 250px!important;
@@ -177,6 +181,45 @@ mobile-nav{
         opacity: 0
     }
 }
+.candle-chart-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-transaction-container {
+    position: sticky;
+    top: 10px;
+}
+.mobile-progress-header {
+    position: sticky;
+    margin-top: -15px;
+    margin-bottom: 1rem;
+}
+
+.trade_pane {
+    > .progress  {
+        position: sticky;
+        top: 10px;    
+        z-index: 4;
+    }
+    .tableFixHead {
+        overflow-y: auto;
+        // height: 18vh;
+        height: calc(32vh - 150px);
+        margin-top: 10px;
+      }
+      .tableFixHead thead tr {
+        position: sticky;
+        top: 0;
+        background: $color3-d50;
+        @include mainshadow();
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+    
+}
+
 
 footer.mobile-action-menu {
     position: fixed;
