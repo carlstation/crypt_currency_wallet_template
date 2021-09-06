@@ -8,23 +8,26 @@
     .dashboard-bottom-section{
         flex: 340px !important;
     }
-    .tableFixHead {
-        height: 26vh!important;
+    .trade_pane .tableFixHead {
+        height: 30vh!important;
     }
     .trade_pane .tableFixHead thead tr{
         position:relative;
     }
-    .trade_pane > .progress {
-        display: none!important; 
-    }
+    // .trade_pane > .progress {
+    //     display: none!important; 
+    // }
 }
 @media only screen and (max-height: 834px){
     .dashboard-bottom-section{
         flex: 330px !important;
     }
     .tableFixHead {
-        height: 24vh!important;
+        height: 33vh!important;
     }
+    // .tradingview-widget-container{
+    //     height: 500px;
+    // }
 }
 @media only screen and (max-height: 768px){
     .dashboard-bottom-section{
@@ -69,7 +72,7 @@
         padding-left: 0!important;
         padding-right: 0!important;
         padding-top: 1rem!important;
-        padding-bottom: 2rem!important;
+        padding-bottom: 0rem!important;
     }
     .chart-container{
         flex: 1!important;

@@ -325,7 +325,7 @@ function mobileChartView(x) {
 }
   
 var x = window.matchMedia("(max-width: 800px)")
-var collapse_limit = window.matchMedia("(max-width: 1280px)")
+var collapse_limit = window.matchMedia("(max-width: 1366px)")
 
 collapseLimitSize(collapse_limit)
   collapse_limit.addListener(collapseLimitSize)

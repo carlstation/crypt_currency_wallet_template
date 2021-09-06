@@ -88,12 +88,13 @@ $bottom_section_size: 400px;
 }
 .dashboard-wrapper-container{
     // margin-top: calc(70px + 1rem);
-    padding: 1rem;
+    padding: 1.25rem 1rem 1rem 1rem;
 }
 .dashboard-bottom-section{
     display: inline-flex;
     flex-wrap: nowrap;
-    flex: 1 0 calc(32vh - 70px);
+    flex: 1 0 calc(39vh - 70px);
+    // min-height: 380px;
     .ads, .card-table{
         display: flex;
         flex-direction: column;
@@ -159,6 +160,9 @@ $bottom_section_size: 400px;
 
 .pbar-success{
     @include maingradient();
+    &:after{
+        content: '';
+    }
 }
 .pbar-danger{
     @include redgradient();
