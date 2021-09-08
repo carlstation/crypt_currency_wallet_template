@@ -289,14 +289,6 @@ if(chartsIndiv.length > 0){
 
 jQuery(document).ready(function() {
 
-function collapseLimitSize(collapse_limit) {
-  if (collapse_limit.matches) {
-    jQuery('body').addClass('sidebar-collapse');
-  } else {
-    jQuery('body').removeClass('sidebar-collapse');
-  }
-}
-
 function mobileChartView(x) {
 	if (x.matches) { 
 	// If media query matches with mobile size
@@ -323,12 +315,33 @@ function mobileChartView(x) {
 
 	}
 }
-  
-var x = window.matchMedia("(max-width: 800px)")
-var collapse_limit = window.matchMedia("(max-width: 1366px)")
+ 
+// function closeLimitSize(collapse_close) {
+//   if (collapse_close.matches) {
+//     jQuery('body').addClass('sidebar-closed');
+//   } else {
+//     jQuery('body').removeClass('sidebar-closed');
+//   }
+// }
 
-collapseLimitSize(collapse_limit)
-  collapse_limit.addListener(collapseLimitSize)
+// function collapseLimitSize(collapse_limit) {
+//   if (collapse_limit.matches) {
+//     jQuery('body').addClass('sidebar-collapse');
+//   } else {
+//     jQuery('body').removeClass('sidebar-collapse');
+//   }
+// }
+
+
+var x = window.matchMedia("(max-width: 800px)")
+// var collapse_limit = window.matchMedia("(max-width: 1366px)")
+// var collapse_close = window.matchMedia("(max-width: 1024px)")
+
+// closeLimitSize(collapse_close)
+//   collapse_close.addListener(closeLimitSize)
+
+// collapseLimitSize(collapse_limit)
+//   collapse_limit.addListener(collapseLimitSize)
 
   mobileChartView(x) // Call listener function at run time
   x.addListener(mobileChartView) // Attach listener function on state changes
@@ -386,6 +399,15 @@ collapseLimitSize(collapse_limit)
   jQuery(document).on('click', '.btn-dropdown-mobile-toggle', function(e) {
     e.preventDefault();
     jQuery('.mobile-dropdown-menu').toggleClass('shown');
+  });
+
+  jQuery(document).on('click', '.overlay_search_toggle', function(e) {
+    e.preventDefault();
+    jQuery('#overlay_search').toggleClass('hide');
+  });
+  jQuery(document).on('click', '.bg-overlay', function(e) {
+    e.preventDefault();
+    jQuery('#overlay_search').toggleClass('hide');
   });
 
   // mobile menu end here

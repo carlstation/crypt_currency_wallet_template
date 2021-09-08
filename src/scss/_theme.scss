@@ -154,11 +154,7 @@ mobile-nav{
     }
     }
 }
-@media only screen and (max-height: 740px){
-    .chart-container {
-        flex: 1 !important;
-    }
-}
+
 .wrapper-inner-content{
     height: -webkit-fill-available;
 }
@@ -199,10 +195,10 @@ mobile-nav{
 }
 .mobile-token-info{
     span{
-        font-size: 0.87em;
+        font-size: 0.74em;
         color: $primary;
         &.value {
-            font-size: 1em;
+            font-size: 0.87em;
             color: white;
         }
     }
@@ -239,10 +235,17 @@ mobile-nav{
       }
     
 }
+.table.table-head-fixed.table-dark thead tr:nth-child(1) th{
+    background-color: $color3-d50 !important;
+}
 
+.table.table-head-fixed thead tr:nth-child(1) th{
+    background-color: $color3-d50 !important;
+}
 
 footer.mobile-action-menu {
     position: fixed;
+    z-index: 9998;
     bottom: 0;
     width: 100%;
     background: var(--dark);

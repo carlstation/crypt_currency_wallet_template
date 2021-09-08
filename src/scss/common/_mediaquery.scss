@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1366px){ 
+    .candle-chart-header{
+        // flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
+
 
 @media only screen and (min-width: 1024px) and (min-height: 900px){
     .dashboard-bottom-section {
@@ -20,7 +27,7 @@
 }
 @media only screen and (max-height: 834px){
     .dashboard-bottom-section{
-        flex: 330px !important;
+        height: 350px;
     }
     .tableFixHead {
         height: 33vh!important;
@@ -31,10 +38,13 @@
 }
 @media only screen and (max-height: 768px){
     .dashboard-bottom-section{
-        flex: 330px !important;
+        height: 330px;
     }
     .tableFixHead {
         height: 25vh;
+    }
+    .chart-container{
+        flex: 0 1 80vh;
     }
 }
 
@@ -56,6 +66,9 @@
             }
         }
     }
+    .chart-container{
+        flex: 0 1 82vh;
+    }
 }
 @media only screen and (max-width: 995px){
     .margin-wrapper {
@@ -74,15 +87,26 @@
         padding-top: 1rem!important;
         padding-bottom: 0rem!important;
     }
-    .chart-container{
-        flex: 1!important;
-    }
+    // .chart-container{
+    //     flex: 1!important;
+    // }
     .ads-body{
         display: none!important;
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-height: 740px){
+    // .chart-container {
+    //     flex: 1 !important;
+    // }
+}
+
+// mobile
+@media only screen and (max-width: 411px) {
+
+    .chart-container{
+        flex: 0 1 72vh;
+    }
     .container-fluid{
         padding-bottom: 3em;
     }
@@ -103,24 +127,6 @@
         content: attr(data-th);
         float: left;
     }
-    
-    // .container-fluid {
-    //     padding-right: 0!important;
-    //     padding-left: 0!important;
-    // }
-    // .btn-group{ 
-    //     border-radius: 12px!important;
-    //     margin: 0.5em 1em;
-    // }
-    // .addax-sponsor{
-    //     margin-left: 0.5em;
-    // }
-    // .table_div_line{
-    //     display: block;
-    // }
-    // body.addax-dark .card{
-    //     border-radius: 0!important;
-    // }
     .pl-3{
         padding-left: 0!important;
     }
@@ -129,9 +135,63 @@
     }
 }
 
+@media (max-width: 375px){
+    .tableFixHead {
+        height: 75vh !important;
+    }
+    .chart-container{
+        flex: 0 1 74vh;
+    }
+}
+
+
+
+// MAX HEIGHT
+//
+@media only screen and (max-height: 823px) and (max-width: 411px){
+    .chart-container{
+        flex: 0 1 75vh;
+    }
+    .trade_pane .tableFixHead{
+        height: 65vh!important;
+    }
+} 
+
+@media only screen and (max-height: 812px) and (max-width: 411px){
+    .chart-container{
+        flex: 0 1 75vh;
+    }
+    .trade_pane .tableFixHead{
+        height: 64vh!important;
+    }
+} 
+
+@media only screen and (max-height: 736px) and (max-width: 411px){
+    .chart-container{
+        flex: 0 1 72vh;
+    }
+    .trade_pane .tableFixHead {
+        height: 55vh!important;
+    }
+} 
+
+@media only screen and (max-height: 667px) and (max-width: 411px){
+    .chart-container{
+        flex: 0 1 68vh;
+    }
+    .trade_pane .tableFixHead {
+        height: 55vh!important;
+    }
+} 
+
 @media (min-width: 576px) {
     .form-inline .input-group, .form-inline .custom-select {
         width: 100%!important;
     }
-
+    
 }
+@media only screen and (max-height: 568px){
+    .chart-container{
+        flex: 0 1 64vh;
+    }
+} 

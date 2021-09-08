@@ -160,10 +160,44 @@ $bottom_section_size: 400px;
 
 .pbar-success{
     @include maingradient();
-    &:after{
-        content: '';
-    }
+    // &:after{
+    //     content: '';
+    // }
 }
 .pbar-danger{
     @include redgradient();
+}
+
+.overlay {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1254; 
+    @include ease-transition-04;
+    & .bg-overlay {
+        background-color: #000;
+        backdrop-filter: blur(15px);
+        opacity: .65;
+        z-index: 1252; 
+        height: 100%;
+        width: 100%;
+    }
+}
+.table-main-search{
+    background-color: $color3-d50;
+    border-radius: $border-radius;
+    opacity: .45;
+}
+
+.search_toggled_form {
+    z-index: 1255;
+    position: absolute;
+    width: 100%;
+    padding: 1.5em;
+    form {
+        margin-bottom: 1rem;
+    }
 }
