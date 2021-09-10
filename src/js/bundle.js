@@ -401,17 +401,25 @@ var x = window.matchMedia("(max-width: 800px)")
     jQuery('.mobile-dropdown-menu').toggleClass('shown');
   });
 
+  // search mobile button toggle
+  // for overlay search input
   jQuery(document).on('click', '.overlay_search_toggle', function(e) {
     e.preventDefault();
-    jQuery('#overlay_search').toggleClass('hide');
+    jQuery('#div_overlay_search').toggleClass('hide');
   });
+  // table for input search
+  jQuery(document).on('click', '.menu_search_toggle', function(e) {
+    e.preventDefault();
+    jQuery('#table_search').toggleClass('hide');
+  });
+  //overlay close
   jQuery(document).on('click', '.bg-overlay', function(e) {
     e.preventDefault();
-    jQuery('#overlay_search').toggleClass('hide');
+    console.log($(this).parent().attr('id'))
+    jQuery('#' + $(this).parent().attr('id')).toggleClass('hide');
   });
 
   // mobile menu end here
-
   jQuery(document).on('click', '.addax-header i.menu-toggle', function(){
     jQuery('.addax-mobile-menu').toggleClass('show');
     jQuery(this).toggleClass('open')
